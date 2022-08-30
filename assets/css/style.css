@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+  font-family: 'Patrick Hand', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
