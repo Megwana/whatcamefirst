@@ -35,6 +35,7 @@ nav {
 
 .landing-page-title h1 {
   text-align: center;
+  font-size: 50px;
   margin: 0;
 }
 
@@ -60,7 +61,7 @@ nav {
   align-content: center;
   flex-flow: column;
   background: #E2DDD6;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
@@ -89,4 +90,10 @@ nav {
 
 footer {
   text-align: center;
+  background-color: #E2DDD6;
+  opacity: 0.8;
+}
+
+.social-links {
+  float: right;
 }
