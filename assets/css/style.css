@@ -6,11 +6,39 @@
   color: black;
 }
 
+body {
+  margin: none;
+}
+
+.landmark-logo {
+  float: left;
+}
+
+.landing-page-title h1 {
+  text-align: center;
+  margin: 0;
+}
 
 .material-symbols-outlined {
+  float: right;
+  margin-top: -24px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+
+.welcome-container {
+  margin: 20%;
+  justify-content: center;
+  background: yellow;
+}
+
+.welcome-container h2 {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
