@@ -30,13 +30,24 @@ body {
 }
 
 .welcome-container {
-  margin: 20%;
+  margin: 10%;
   justify-content: center;
   background: yellow;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
 }
 
 .welcome-container h2 {
   text-align: center;
+}
+
+.button-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
 footer {
