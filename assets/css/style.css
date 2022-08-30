@@ -47,7 +47,7 @@ nav {
 }
 
 .welcome-container {
-  margin: 50px;
+  margin: 100px auto 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,11 +83,9 @@ nav {
 }
 
 footer {
-  text-align: center;
-  background-color: white;
-  opacity: 0.8;
-}
-
-.social-links {
-  float: right;
-}
+    position: fixed;
+    bottom: 0;
+    min-height: 20px;
+    min-width: 100vw;
+    padding: 10px;
+  }
