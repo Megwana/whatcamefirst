@@ -50,6 +50,15 @@ body {
   margin: 10px;
 }
 
+.play-button, .rules-button, .scores-button, .contact-button {
+  margin: 10px;
+  padding: 10px 18px;
+  background: pink;
+  border-radius: 6px;
+  box-shadow: 10px;
+  border: none;
+}
+
 footer {
   text-align: center;
 }
