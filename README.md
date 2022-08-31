@@ -22,17 +22,29 @@ A quiz is classed a game or even a sport for the mind. People either individuall
 
 ### Goals 
 
+- New Vistitors to the site: 
+
+- Regular Visitors to the site: 
+
+- All visitors:
+
 ## 2. User Design Experience (UX)
 
 ### Conceptualisation
 
 ### Wireframes
 
+- Figma
+
 ### Colour Scheme
 
 ### Typography
 
+- Google Fonts
+
 ### Imagery
+
+- Pexels & Shutterstock
 
 ### Accessibility
 
