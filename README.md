@@ -12,10 +12,49 @@ To view the deployed site, click this link: [What Came First](WEBSITE-LINK)
 * [4. Technologies Applied](#Technologies-applied)
 * [5. Testing](#Testing)
 * [6. Deployment](#Deployment)
-* [7. Credit](#Credits)
+* [7. Credits](#Credits)
+
+## 1. Introduction
+
+### Introduction & Premise 
 
 A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. (https://en.wikipedia.org/wiki/Quiz)
 
+### Goals 
+
+## 2. User Design Experience (UX)
+
+### Conceptualisation
+
+### Wireframes
+
+### Colour Scheme
+
+### Typography
+
+### Imagery
+
+### Accessibility
+
+## 3. Features
+
+### Existing Features
+
+### Future Features
+
+## 4. Technologies Applied
+
+## 5. Testing
+
+### W3C Validator
+
+### Lighthouse
+
+### Bugs
+
+## 6. Deployment
+
+## 7. Credit
 links used
 https://imagecolorpicker.com/
 https://fontawesome.com/
