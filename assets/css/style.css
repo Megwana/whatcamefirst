@@ -104,7 +104,7 @@ footer {
   z-index: 0;
   background-color: white;
   opacity: 0.9;
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .social-links {
@@ -112,11 +112,28 @@ footer {
   justify-content: center;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+/* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+  .landing-page-title h1 {
+    font-size: 30px;
+    width: 250px;
+  }
+  .landmark-logo, .material-symbols-outlined {
+  font-size: 30px;
+  }
+  .welcome-container {
+    width: 280px;
+  }
+  .welcome-container h2 {
+    margin: 2px;
+  }
+  .welcome-list {
+    padding: 2px;
+  }
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 500px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
