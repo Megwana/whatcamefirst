@@ -11,10 +11,10 @@ body {
   background: url(/assets/images/pyramid.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
+  position: relative;
   overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
+  min-height: 100vh;
   margin: 0;
 }
 
