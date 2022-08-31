@@ -143,3 +143,35 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+/* Extra Extra large devices (large laptops and desktops, 2100px and up) */
+@media only screen and (min-width: 2100px) {
+  .landing-page-title h1 {
+    font-size: 150px;
+    width: 70rem;
+}
+.landmark-logo, .material-symbols-outlined {
+  font-size: 100px;
+}
+
+.landmark-logo {
+  margin-left: 70px;
+}
+
+.welcome-container {
+  max-width: 1400px;
+}
+.welcome-container h2 {
+  text-align: center;
+  font-size: 80px;
+}
+
+.welcome-container p, li, .index-btn {
+  font-size: 50px;
+}
+
+.index-btn {
+  width: 500px;
+  height: 100px;
+}
+}
