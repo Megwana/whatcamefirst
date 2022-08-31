@@ -86,16 +86,9 @@ nav {
 }
 
 .index-btn:hover {
-  background-color: #000000;
-}
-
-.index-btn a {
-  color: #000000;
-}
-
-.index-btn a:hover {
-  color: aliceblue;
-/*#d2540e*/
+  background: white;
+  border: #000000 2px solid;
+  transition: 0.4s;
 }
 
 /*Footer css styling including social media links*/
