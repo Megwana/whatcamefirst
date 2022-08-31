@@ -68,6 +68,10 @@ nav {
   text-align: center;
 }
 
+.welcome-list {
+  list-style: decimal;
+}
+
 .button-family {
   display: flex;
   flex-direction: column;
