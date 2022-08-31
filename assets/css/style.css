@@ -3,7 +3,7 @@
 * {
   font-family: 'Patrick Hand', cursive;
   text-decoration: none;
-  color: black;
+  list-style: none;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
 
 nav {
   margin: 40px 0 0;
+  z-index: 10;
 }
 .landmark-logo {
   float: left;
@@ -58,10 +59,15 @@ nav {
   border-radius: 10px;
   max-width: 500px;
   box-shadow: 4px 4px 14px 6px #000000;
+  z-index: 6;
 }
 
 .welcome-container h2 {
   text-align: center;
+}
+
+button {
+  color: white;
 }
 
 .button-family {
@@ -72,20 +78,30 @@ nav {
   margin: 10px;
 }
 
-.play-button, .rules-button, .scores-button, .contact-button {
+.index-btn {
   margin: 10px;
   padding: 10px 18px;
-  background: #d2540e;
+  background: #ff7a00;
   border-radius: 6px;
   box-shadow: 10px;
   border: none;
-  color: white;
+}
+
+.index-btn:hover {
+  background-color: #000000;
+}
+
+.index-btn a {
+  color: #000000;
+}
+
+.index-btn a:hover {
+  color: aliceblue;
+/*#d2540e*/
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    min-height: 20px;
-    min-width: 100vw;
-    padding: 10px;
-  }
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
