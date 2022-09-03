@@ -68,5 +68,6 @@ A quiz is classed a game or even a sport for the mind. People either individuall
 
 ## 7. Credit
 links used
-https://imagecolorpicker.com/
-https://fontawesome.com/
+- https://imagecolorpicker.com/
+- https://fontawesome.com/
+- <a href="https://www.flaticon.com/free-icons/greek" title="greek icons">temple icon created by Smashicons - Flaticon</a>
