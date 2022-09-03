@@ -13,7 +13,7 @@ previousButton.addEventListener('click', () => {
 })
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
-    setPreviousQuestion()
+    setNextQuestion()
 })
 const questions = [
     {
