@@ -15,8 +15,7 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-const questions = [
-    {
 
-    }
-]
+function startGame() {
+    startButton.classList.add('hide')
+}
