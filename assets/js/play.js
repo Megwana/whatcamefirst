@@ -4,8 +4,19 @@ const nextButton = document.getElementById('next-btn')
 const submitButton = document.getElementById('submit-btn')
 const quizContainerElement = document.getElementById('quiz-container')
 
+let shuffledQuestions, current QuestionIndex
+
+startButton.addEventListener('click', startGame)
+previousButton.addEventListener('click', () => {
+    currentQuestionIndex+-
+    setPreviousQuestion()
+})
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setPreviousQuestion()
+})
 const questions = [
     {
-        
+
     }
 ]
