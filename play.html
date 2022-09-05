@@ -9,25 +9,42 @@
     <meta name="description" content="A general knowledge history quiz">
     <meta name="keywords" content="What Came First, quiz game, history, general knowledge">
     <!--CSS link-->
-    <link rel="stylesheet" href="assets/css/play.css">
+    <link rel="stylesheet" href="/assets/css/play.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 <!--Title-->
     <title>What Came First?</title>
 </head>
 <body>
     <!--Header displaying the title and the premise of the quiz-->
-    <header class="landing-page-title">
-        <a href="index.html">
-            <h1>What Came First?</h1>
-        </a>
-    </header>
+    <nav>
+        <logo class="logo-dropdown">
+            <button class="dropbtn">
+                <i class="fa-solid fa-landmark"></i>
+            </button>
+            <div class="menu">
+              <a href="index.html">Home</a>
+              <a href="play.html">Play</a>
+              <a href="#">Instructions</a>
+              <a href="scores.html">Highscores</a>
+              <a href="contact.html">Contact</a>
+            </div>
+        </logo>
+        <!--Header displaying the title and the premise of the quiz-->
+        <header>
+            <a href="index.html" class="landing-page-title">
+                <h1>WHAT CAME FIRST?</h1>
+            </a>
+        </header>
     <div class="quiz-container">
-        <div id="question-counter">
-            <h2>Question:</h2>
-            <h2>1/10</h2>
-        </div>
-        <div id="score">
-            <h2>Score:</h2>
-            <h2>0</h2>
+        <div class="tallies">
+            <div id="question-counter"> 
+                <h2>Question:</h2>
+                <h2>1/10</h2>
+            </div>
+            <div id="score">
+                <h2>Score:</h2>
+                <h2>0</h2>
+            </div>
         </div>
         <div id="question-container" class="hide"> 
             <div class="question-title">
@@ -50,19 +67,9 @@
         </div>
         <div id="results"></div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </p>
-            <p>
-                This website is for educational purposes only.
-            </p>
-        </div>
-    </footer>
     <!--Javascript link-->
     <script src="assets/js/play.js"></script>
+    <!--Font Awesome link-->
+    <script src="https://kit.fontawesome.com/33824b6518.js" crossorigin="anonymous"></script>
 </body>
 </html>

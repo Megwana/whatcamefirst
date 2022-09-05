@@ -18,3 +18,27 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
+.quiz-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.tallies {
+  display: flex;
+  justify-content: space-between;
+}
+
+#question-counter,
+#score {
+  text-align: center;
+}
+
+.controls {
+
+}
+
+.answer-container {
+  display: flex;
+  flex-direction: initial;
+}
