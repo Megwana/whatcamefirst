@@ -62,17 +62,24 @@ h2 {
   display: flex;
   flex-direction: initial;
   font-size: 1.2rem;
+  margin: 10px;
 }
 
 .answ-prefix {
-  background-color: rgba(229, 54, 54, 0.853);
+  background-color: rgba(154, 217, 255, 0.853);
   color: white;
   padding: 1.2rem 2.2rem;
+  margin: 0;
 }
 
 .answ-text {
   padding: 1.2rem;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.858);;
+  background-color: rgba(255, 255, 255, 0.858);
+  margin: 0;
+
 }
 
+.answer-container:hover {
+  box-shadow: 1px 1px 38px -7px rgba(255,204,0,0.51);
+}
