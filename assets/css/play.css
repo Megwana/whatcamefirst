@@ -4,7 +4,6 @@
   font-family: 'Patrick Hand', cursive;
   text-decoration: none;
   list-style: none;
-  color: #000000;
 }
 
 body {
@@ -17,11 +16,14 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  color: #000000;
 }
 
 .quiz-container {
   max-width: 500px;
-  margin: auto;
+  margin: 100px auto;
+  background-color: rgba(0, 0, 0, 0.734);
+  border-radius: 10px;
 }
 
 .tallies {
@@ -32,13 +34,45 @@ body {
 #question-counter,
 #score {
   text-align: center;
+  margin: 6px 30px 2px;
+}
+
+.question-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  color: white;
+}
+
+#question-counter h2,
+#score h2 {
+  margin: 10px 0;
 }
 
 .controls {
-
+  margin: 20px;
+  text-align: center;
+  padding: 16px;
 }
+
 
 .answer-container {
   display: flex;
   flex-direction: initial;
+  font-size: 1.2rem;
 }
+
+.answ-prefix {
+  background-color: rgba(229, 54, 54, 0.853);
+  color: white;
+  padding: 1.2rem 2.2rem;
+}
+
+.answ-text {
+  padding: 1.2rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.858);;
+}
+
