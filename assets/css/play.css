@@ -32,7 +32,7 @@ body {
 }
 
 #question-counter,
-#score {
+#points-container {
   text-align: center;
   margin: 6px 30px 2px;
 }
@@ -47,7 +47,7 @@ h2 {
 }
 
 #question-counter h2,
-#score h2 {
+#points-container h2 {
   margin: 10px 0;
 }
 
