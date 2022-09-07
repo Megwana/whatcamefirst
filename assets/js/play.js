@@ -1,5 +1,7 @@
+//Required elements listed as const below
 const startButton = document.querySelector("start-button");
 const questionCounter = document.querySelector("question-counter");
+const quizContainer = document.querySelector("quiz-container");
 const timerCounter = document.querySelector("timer-counter");
 const pointsCounter = document.querySelector("points-counter");
 const question = document.querySelector("question");
@@ -7,69 +9,13 @@ const answerPrefix = document.querySelector("answer-prefix");
 const answerText = document.querySelector("answer-text");
 const nextButton = document.querySelector("next-button");
 
-const getNewQuestion = () => {
-    if (availableQuestion.length === 0) {
-        alert("End of the game")
-        return;
-    }
-
-    questionNumber++;
-    questionNumberText.innerText = `$[questionNumberText/${MAX_QUESTIONS}]`;
-
-    currentQuestion = availableQuestion[0];
-    console.log(currentQuestion);
-    question.innerText = currentQuestion.question;
-
-    console.log(answer);
-
-    answer.forEach = (answer) => {
-        answer.innerText = currentQuestion[answer.dataset["answer"]]
-    }
-
-    answer.forEach = (answer) => {
-        answer.addEventListener("click", (e) => {
-            console.log(e);
-
-            const clickedAnswer = e.target;
-
-            console.log(clickedAnswer);
-            const answerLetter = clickedAnswer.dataset["answer"];
-
-        });
-    }
-
-
-function restartGame() {
-
+//the action of clicking the Start Button
+startButton.onclick = ()=>{
+    quizContainer.classList.add("activeQuiz"); //show quiz container
 }
 
-function shuffle() {
+//the action of clicking the Next Button
 
-}
-
-function IncrementPoints() {
-
-}
-
-function IncrementQuestions() {
-
-}
-
-function nextQuestion(e) {
-
-}
-
-function checkAnswer(e){
-
-}
-
-nextButton.onclick = () => {
-    if(questionNumber < questions.length - 1) {
-        questionNumber++;
-    } else {
-        showResult();
-    }
-}
 
 const questions = [
     {
@@ -154,5 +100,3 @@ const questions = [
         {4: '937', correct: false} ],
     }
 ]
-
-}
