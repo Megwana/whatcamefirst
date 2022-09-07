@@ -7,7 +7,7 @@ const quizContainerElement = document.getElementById('quiz-container');
 
 let shuffledQuestions, currentQuestionIndex
 
-let questions = [
+let Questions = [
     {
         question: 'What is the sky?',
         choice1: 'test',
@@ -15,9 +15,7 @@ let questions = [
         choice3: 'mars',
         choice4: 'sun',
         answer: 'test',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is the moon?',
         choice1: 'moon10',
@@ -25,9 +23,7 @@ let questions = [
         choice3: 'mars',
         choice4: 'sun',
         answer: 'moon10',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is are the clouds?',
         choice1: 'clouds8',
@@ -35,9 +31,7 @@ let questions = [
         choice3: 'mars',
         choice4: 'sun',
         answer: 'clouds8',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is the galaxy?',
         choice1: 'galaxy7',
@@ -45,9 +39,7 @@ let questions = [
         choice3: 'mars7',
         choice4: 'sun7',
         answer: 'galaxy7',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is the sea?',
         choice1: 'sea6',
@@ -55,9 +47,7 @@ let questions = [
         choice3: 'mars6',
         choice4: 'sun6',
         answer: 'test6',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is are the stars?',
         choice1: 'stars5',
@@ -65,9 +55,7 @@ let questions = [
         choice3: 'mars5',
         choice4: 'sun5',
         answer: 'stars5',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is the earth?',
         choice1: 'earth4',
@@ -75,9 +63,7 @@ let questions = [
         choice3: 'mars4',
         choice4: 'sun4',
         answer: 'earth4',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is pluto?',
         choice1: 'test3',
@@ -85,9 +71,7 @@ let questions = [
         choice3: 'mars3',
         choice4: 'sun3',
         answer: 'pluto3',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is mars?',
         choice1: 'test2',
@@ -95,9 +79,7 @@ let questions = [
         choice3: 'mars2',
         choice4: 'sun2',
         answer: 'mars2',
-    }
-]
-let questions = [
+    },
     {
         question: 'What is the sun?',
         choice1: 'test1',
