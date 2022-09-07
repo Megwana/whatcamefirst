@@ -1,5 +1,5 @@
 //Required elements listed as const below
-const start_btn = document.querySelector(".start_btn button");
+const startButton = document.querySelector(".start-button button");
 const questionCounter = document.querySelector(".question-counter");
 const quizContainer = document.querySelector(".quiz-container");
 const timerCounter = document.querySelector(".timer-counter");
@@ -11,10 +11,12 @@ const nextButton = document.querySelector(".next-button");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
 
-start_btn.onclick = ()=>{
+startButton.onclick = ()=>{
     quizContainer.classList.add("activeInfo"); //show info box
-    start_btn.classList.add("hideme");
+    startButton.classList.add("hideme");
 }
+
+
 
 //the action of clicking the Next Button
 

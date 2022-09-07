@@ -19,7 +19,7 @@ body {
   color: #000000;
 }
 
-.start_btn button {
+.start-button button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,11 +33,11 @@ body {
   cursor: pointer;
 }
 
-.start_btn button.hideme {
+.start-button button.hideme {
   display: none;
 }
 
-.start_btn button:hover {
+.start-button button:hover {
   background-color: #000000;
   transition: 0.6s;
 }
@@ -49,7 +49,8 @@ body {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
+  transition: 0.4s;
+  transform: translate(-0%, -50%) scale(1);
 }
 
 .quiz-container {
@@ -59,7 +60,7 @@ body {
   border-radius: 10px;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-0%, -50%) scale(0.9);
 }
 
 .tallies {
