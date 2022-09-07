@@ -1,9 +1,14 @@
 const question = document.querySelector('#question');
 const answers = Array.from(document.querySelectorAll('.answ-text'));
-const points = document.querySelector('#points');
+const pointsDigit = document.querySelector('#points-digit');
 const questionNumber = document.querySelector('#quest-num');
 const nextButton = document.getElementById('next-btn');
-const quizContainerElement = document.getElementById('quiz-container');
+
+let currentQuestion = {}
+let acceptingAnswers = true
+let points = 0
+let questionCounter = 0
+let availableQuestions = []
 
 let Questions = [
     {
