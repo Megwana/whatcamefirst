@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const answers = document.querySelectorAll('.answ-text');
+const answers = Array.from(document.querySelectorAll('.answ-text'));
 const points = document.querySelector('#points');
 const questionNumber = document.querySelector('#quest-num');
 const nextButton = document.getElementById('next-btn');
