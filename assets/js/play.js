@@ -93,7 +93,7 @@ let Questions = [
     }
 ]
 
-const SCORE_POINTS = 200
+const POINT_DIGITS = 200
 const MAX_QUESTIONS = 10
 
 runGame = () => {
@@ -128,5 +128,28 @@ availableQuestions.splice(questionArray, 1)
 acceptingAnswers = true
 
 }
+
+answers.forEach(answers => {
+    answers.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedAnswer = e.target
+        const selectedOption = selectedAnswer.dataset['number']
+
+        let classToApply = selectedOption == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore (POINT_DIGITS)
+        }
+
+        selectedAnswer.parentElement.classList.add(classToApply)
+
+        setTimeout (() => {
+            selectedAnswer.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
+    })
+})
 
 
