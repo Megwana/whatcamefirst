@@ -44,6 +44,12 @@ const getNewQuestion = () => {
     console.log(currentQuestion);
     question.innerText = currentQuestion.question;
 
+    console.log(answer);
+
+    answer.forEach((answer)) => {
+        answer.innerText = currentQuestion[answer.dataset["answer"]];
+    }
+
     availableQuestion.shift();
 }
 
