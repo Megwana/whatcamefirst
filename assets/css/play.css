@@ -37,7 +37,7 @@ body {
   margin: 6px 30px 2px;
 }
 
-.question-title {
+#question {
   text-align: center;
   font-size: 30px;
 }

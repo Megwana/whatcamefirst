@@ -5,16 +5,14 @@ const questionNumber = document.querySelector('#quest-num');
 const nextButton = document.getElementById('next-btn');
 const quizContainerElement = document.getElementById('quiz-container');
 
-let shuffledQuestions, currentQuestionIndex
-
 let Questions = [
     {
-        question: 'What is the sky?',
-        choice1: 'test',
-        choice2: 'pluto',
-        choice3: 'mars',
-        choice4: 'sun',
-        answer: 'test',
+        question: 'What was founded first?',
+        choice1: 'Oxford University',
+        choice2: 'Aztec Empire',
+        choice3: 'Cambridge University',
+        choice4: 'Inca Empire',
+        answer: 'Oxford University',
     },
     {
         question: 'What is the moon?',
@@ -105,4 +103,11 @@ if(availableQuestions.length === 0 || questionsCounter > MAX_QUESRIONS) {
     localStorage.setItem('mostRecentScore', score)
     return window.location.assign('/end.htm')
 }
+
+questionCounter++
+questionNumber.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
 }
+
+const questionArray = Math.floor(Math.random() * availableQuestioins)
+currentQuestion = avialableQuestions[questionArray]
+question.innerText = currentQuestion.question
