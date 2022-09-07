@@ -4,11 +4,10 @@ const question = document.querySelector('#question');
 const answerText = Array.from(document.querySelector('#answer-text'));
 const nextButton = document.querySelector('#next-btn');
 const questionNumberText = document.querySelector('#question-number');
-const points = document.querySelector('#points')
+const pointsCounter = document.querySelector('#points')
 
-console.log(questions);
 let questionNumber;
-let pointsCounter;
+let points;
 const MAX_QUESTIONS = 10;
 const SCORE = 20;
 
@@ -16,7 +15,8 @@ function runGame() {
     questionNumber = 0;
     points = 0;
     availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS)
-}
+    getNewQuestion();
+};
 
 const getRandomQuestions = (arr, n) => {
     let leng = arr.length;
@@ -29,6 +29,22 @@ const getRandomQuestions = (arr, n) => {
     const shuffled = arr.sort(() => 0.5 - Math.random());
 
     return (selected = shuffled.slice(0, n));
+};
+
+const getNewQuestion = () => {
+    if (availableQuestion.length === 0) {
+        alert("End of the game")
+        return;
+    }
+
+    questionNumber++;
+    questionNumberText.innerText = `$[questionNumberText/${MAX_QUESTIONS}]`;
+
+    currentQuestion = availableQuestion[0];
+    console.log(currentQuestion);
+    question.innerText = currentQuestion.question;
+
+    availableQuestion.shift();
 }
 
 function restartGame() {
@@ -55,7 +71,7 @@ function checkAnswer(e){
 
 }
 
-next_btn.onclick = () => {
+nextButton.onclick = () => {
     if(questionNumber < questions.length - 1) {
         questionNumber++;
     } else {
