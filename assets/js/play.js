@@ -100,19 +100,21 @@ runGame = () => {
     questionCounter = 0
     points = 0
     availableQuestions = [...questions]
-    getNewQuestions()
+    getNewQuestion()
 }
 
-getNewQuestions = () => {
-if(availableQuestions.length === 0 || questionsCounter > MAX_QUESRIONS) {
-    localStorage.setItem('mostRecentScore', score)
-    return window.location.assign('/end.htm')
+getNewQuestion = () => {
+    if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+    localStorage.setItem('mostRecentScore', points)
+
+    return window.location.assign('/end.html')
 }
 
 questionCounter++
 questionNumber.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+questionNumber.style.width = `${(questionCounter/MAX_QUESTIONS) + 10}`
 }
 
-const questionArray = Math.floor(Math.random() * availableQuestioins)
-currentQuestion = avialableQuestions[questionArray]
+const questionArray = Math.floor(Math.random() * availableQuestioins.length)
+currentQuestion = availableQuestions[questionArray]
 question.innerText = currentQuestion.question
