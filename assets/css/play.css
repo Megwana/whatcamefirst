@@ -19,11 +19,47 @@ body {
   color: #000000;
 }
 
+.start_btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
+  width: 300px;
+  height: 100px;
+  font-size: 50px;
+  background-color: rgb(23, 133, 133);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.start_btn button.hideme {
+  display: none;
+}
+
+.start_btn button:hover {
+  background-color: #000000;
+  transition: 0.6s;
+}
+
+.quiz-container.activeInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 400px auto;
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .quiz-container {
   max-width: 500px;
   margin: 100px auto;
   background-color: rgba(0, 0, 0, 0.734);
   border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .tallies {
