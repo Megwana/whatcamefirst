@@ -1,10 +1,20 @@
 // Playing Page
 
-const question = document.getElementById('question');
-const answerCards = document.getElementById('answer-text');
-const next = document.getElementById('next-btn');
+const question = document.querySelector('#question');
+const answerText = Array.from(document.querySelector('#answer-text'));
+const nextButton = document.querySelector('#next-btn');
+const questionNumber = document.querySelector('#question-number');
+const points = document.querySelector('#points')
+
+console.log(questions);
+let questionCounter;
+let pointsCounter;
 
 function runGame() {
+
+}
+
+function restartGame() {
 
 }
 
@@ -26,6 +36,14 @@ function nextQuestion(e) {
 
 function checkAnswer(e){
 
+}
+
+next_btn.onclick = () => {
+    if(questionNumber < questions.length - 1) {
+        questionNumber++;
+    } else {
+        showResult();
+    }
 }
 
 const questions = [
