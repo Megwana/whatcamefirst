@@ -18,7 +18,12 @@ startButton.onclick = ()=>{
 
 //the action of clicking the Next Button
 nextButton.onclick = ()=>{
-
+    if(questionCount < questions.length - 1) {
+        questionCount++;
+        questionCounter++;
+        pointsCounter++;
+        setQuestion(questionCount);
+    }
 }
 
 //let values
