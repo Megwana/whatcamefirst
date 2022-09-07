@@ -1,4 +1,4 @@
-const question = document.querySelector('.question-title');
+const question = document.querySelector('#question');
 const choices = document.querySelector('');
 const points = document.querySelector('#points');
 const questionNumber = document.querySelector('#quest-num');
