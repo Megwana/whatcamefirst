@@ -16,12 +16,16 @@ function IncrementPoints() {
 
 }
 
+function IncrementQuestions() {
+
+}
+
 function nextQuestion(e) {
 
 }
 
 function checkAnswer(e){
-    
+
 }
 
 const questions = [

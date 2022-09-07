@@ -48,7 +48,7 @@ h2 {
 }
 
 #question-counter h2,
-#points-container h2 {
+#points-counter h2 {
   margin: 10px 0;
 }
 
@@ -62,6 +62,12 @@ h2 {
   width: 90px;
   height: 50px;
   font-size: 26px;
+  background-color:rgba(154, 217, 255, 0.853);
+}
+
+#next-btn:hover {
+  background-color: rgb(0, 170, 170);
+  transition: 0.4s;
 }
 
 .answer-container {
@@ -72,22 +78,27 @@ h2 {
 }
 
 .answer-container:hover {
-  box-shadow: 1px 1px 38px -7px rgb(255, 255, 255);
+  /*box-shadow: 1px 1px 38px -7px rgb(255, 255, 255);*/
   cursor: pointer;
 }
 
-.answ-prefix {
+#answer-prefix {
   background-color: rgba(154, 217, 255, 0.853);
   color: white;
   padding: 1.2rem 2.2rem;
   margin: 0;
 }
 
-.answ-text {
+#answer-text {
   padding: 1.2rem;
   width: 100%;
   background-color: white;
   margin: 0;
+}
+
+#answer-text:hover {
+  background-color: rgb(255, 225, 33);
+  transition: 0.4s;
 }
 
 .correct {
