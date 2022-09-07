@@ -152,4 +152,9 @@ answers.forEach(answers => {
     })
 })
 
+incrementScore = num => {
+    pointsDigit +=num
+    pointsDigit.innterText = points
+}
+
 
