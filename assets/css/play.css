@@ -28,11 +28,14 @@ body {
 
 .tallies {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
-#question-counter,
-#points-counter {
+.question-counter,
+.points-counter,
+.timer-counter
+ {
   text-align: center;
   margin: 6px 30px 2px;
 }
@@ -58,7 +61,7 @@ h2 {
   padding: 16px;
 }
 
-#next-btn {
+#next-button {
   width: 90px;
   height: 50px;
   font-size: 26px;

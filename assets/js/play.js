@@ -1,35 +1,11 @@
-// Playing Page
-
-const question = document.querySelector('#question');
-const answerText = Array.from(document.querySelector('#answer-text'));
-const nextButton = document.querySelector('#next-btn');
-const questionNumberText = document.querySelector('#question-number');
-const pointsCounter = document.querySelector('#points')
-
-let questionNumber;
-let points;
-const MAX_QUESTIONS = 10;
-const SCORE = 20;
-
-function runGame() {
-    questionNumber = 0;
-    points = 0;
-    availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS)
-    getNewQuestion();
-};
-
-const getRandomQuestions = (arr, n) => {
-    let leng = arr.length;
-    if (n > leng){
-        throw new RangeError(
-            "getRandomQuestions: more elements taken than available"
-        );
-    }
-
-    const shuffled = arr.sort(() => 0.5 - Math.random());
-
-    return (selected = shuffled.slice(0, n));
-};
+const startButton = document.querySelector("start-button");
+const questionCounter = document.querySelector("question-counter");
+const timerCounter = document.querySelector("timer-counter");
+const pointsCounter = document.querySelector("points-counter");
+const question = document.querySelector("question");
+const answerPrefix = document.querySelector("answer-prefix");
+const answerText = document.querySelector("answer-text");
+const nextButton = document.querySelector("next-button");
 
 const getNewQuestion = () => {
     if (availableQuestion.length === 0) {
@@ -58,7 +34,7 @@ const getNewQuestion = () => {
 
             console.log(clickedAnswer);
             const answerLetter = clickedAnswer.dataset["answer"];
-            
+
         });
     }
 
