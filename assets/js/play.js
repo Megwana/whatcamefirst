@@ -89,3 +89,20 @@ let Questions = [
         answer: 'sun1',
     }
 ]
+
+const SCORE_POINTS = 200
+const MAX_QUESTIONS = 10
+
+runGame = () => {
+    questionCounter = 0
+    points = 0
+    availableQuestions = [...questions]
+    getNewQuestions()
+}
+
+getNewQuestions = () => {
+if(availableQuestions.length === 0 || questionsCounter > MAX_QUESRIONS) {
+    localStorage.setItem('mostRecentScore', score)
+    return window.location.assign('/end.htm')
+}
+}
