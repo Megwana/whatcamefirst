@@ -92,11 +92,11 @@ h2 {
 }
 
 .correct {
-  background-color: rgba(34, 253, 0) 0%, rgb(0, 255, 4) 100%;
+  background-color: rgba(34, 253, 0);
 }
 
 .incorrect {
-  background-color: rgb(253, 0, 0) 0%, rgb(255, 21, 21) 100%;;
+  background-color: rgb(253, 0, 0);
 }
 
 /* Extra small devices (phones, 450px and down) */
