@@ -25,86 +25,85 @@ let availableQuestions = []
 
 const questions = [
     {
-        id: '1',
         question: 'What was founded first?',
-        answers: [
-        { text: 'Oxford University', correct: true},
-        { text: 'Aztec Empire', correct: false},
-        { text: 'Cambridge University', correct: false},
-        { text: 'Inca Empire', correct: false} ],
-
-        id: '2',
-        question: 'What was seen first?',
-        answers: [
-        { text: '1', correct: true},
-        { text: '2', correct: false},
-        { text: '3', correct: false},
-        { text: '4', correct: false} ],
-
-        id: '3',
-        question: 'What was founded first?',
-        answers: [
-        { text: '5', correct: true},
-        { text: '6', correct: false},
-        { text:'7', correct: false},
-        { text: '8', correct: false} ],
-
-        id: '4',
-        question: 'What was founded first?',
-        answers: [
-        {1: '9', correct: true},
-        {2: '10', correct: false},
-        {3: '11', correct: false},
-        {4: '12', correct: false} ],
-
-        id: '5',
-        question: 'What was founded first?',
-        answers: [
-        {1: '13', correct: true},
-        {2: '14', correct: false},
-        {3: '15', correct: false},
-        {4: '16', correct: false} ],
-
-        id: '6',
-        question: 'What was founded first?',
-        answers: [
-        {1: '17', correct: true},
-        {2: '22', correct: false},
-        {3: '86', correct: false},
-        {4: '69', correct: false} ],
-
-        id: '7',
-        question: 'What was hatched first?',
-        answers: [
-        {1: '45', correct: true},
-        {2: '74', correct: false},
-        {3: '92', correct: false},
-        {4: '36', correct: false} ],
-
-        id: '8',
-        question: 'What was created first?',
-        answers: [
-        {1: '564', correct: true},
-        {2: '23', correct: false},
-        {3: '479', correct: false},
-        {4: '28', correct: false} ],
-
-        id: '9',
-        question: 'What was founded first?',
-        answers: [
-        {1: 'OU', correct: true},
-        {2: 'AE', correct: false},
-        {3: 'CU', correct: false},
-        {4: 'IE', correct: false} ],
-
-        id: '10',
-        question: 'What was founded first?',
-        answers: [
-        {1: '98', correct: true},
-        {2: '384', correct: false},
-        {3: '395', correct: false},
-        {4: '937', correct: false} ],
-    }
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'What?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'founded?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'Was?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'first?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'What was 1?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'What was 2?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'founded first 1?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'founded first 2?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
+    {
+        question: 'how are you?',
+        answer1: 'Oxford University',
+        answer2: 'Aztec Empire',
+        answer3: 'Cambridge University',
+        answer4: 'Inca Empire',
+        answer: 'Oxford University',
+    },
 ]
 
 const SCORE_POINTS = 200
@@ -141,3 +140,31 @@ setNewQuestion = ()=> {
     acceptingAnswers = true
 }
 
+answerText.forEach(answerText => {
+    answerText.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedAnswer = e.target
+        const selectedOption = selectedAnswer.dataset['number']
+
+        let classToApply = selectedOption == currentQuestion.answer ? '.correct' : '.incorrect'
+
+        if(classToApply === 'correct') {
+            incrementPoints(SCORE_POINTS)
+        }
+
+        selectedOption.parentElement.classList.add(classToApply)
+        
+        setTimeout(() => {
+            selectedAnswer.parentElement.classList.remove(classToApply)
+            setNewQuestion()
+        }, 1000)
+
+    })
+})
+
+incrementPoints = num => {
+    points +=num
+    points
+}
