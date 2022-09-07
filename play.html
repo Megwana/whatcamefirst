@@ -35,15 +35,26 @@
                 <h1>WHAT CAME FIRST?</h1>
             </a>
         </header>
+    <!--Start Quiz Button-->
+    <div class="start-button">
+        <button>
+            Start Quiz
+        </button>
+    </div>
+    <!--Quiz container-->
     <div class="quiz-container">
         <div class="tallies">
-            <div id="question-counter"> 
+            <div class="question-counter"> 
                 <h2>Question:</h2>
-                <h2 id="question-number">1/10</h2>
+                <h2 class="question-number">1/10</h2>
             </div>
-            <div id="points-counter">
+            <div>
+                <h2 class="timer">Countdown:</h2>
+                <h2 class="timer-counter">30</h2>
+            </div>
+            <div class="points-counter">
                 <h2>Points:</h2>
-                <h2 id="points">0</h2>
+                <h2 class="points">0</h2>
             </div>
         </div>
         <div id="question-container"> 
@@ -52,19 +63,19 @@
             </div>
             <div class="answer-container">
                 <p id="answer-prefix">A</p>
-                <p id="answer-text" data-number="1">Oxford University</p>
+                <p id="answer-text" data-answer="1">Oxford University</p>
             </div>
             <div class="answer-container">
                 <p id="answer-prefix">B</p>
-                <p id="answer-text" data-number="2">Aztec Empire</p>
+                <p id="answer-text" data-answer="2">Aztec Empire</p>
             </div>
             <div class="answer-container">
                 <p id="answer-prefix">C</p>
-                <p id="answer-text" data-number="3">Cambridge University</p>
+                <p id="answer-text" data-answer="3">Cambridge University</p>
             </div>
             <div class="answer-container">
                 <p id="answer-prefix">D</p>
-                <p id="answer-text" data-number="4">Inca Empire</p>
+                <p id="answer-text" data-answer="4">Inca Empire</p>
             </div>
         </div>
         <div class="controls">

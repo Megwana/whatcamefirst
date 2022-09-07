@@ -46,12 +46,22 @@ const getNewQuestion = () => {
 
     console.log(answer);
 
-    answer.forEach((answer)) => {
-        answer.innerText = currentQuestion[answer.dataset["answer"]];
+    answer.forEach = (answer) => {
+        answer.innerText = currentQuestion[answer.dataset["answer"]]
     }
 
-    availableQuestion.shift();
-}
+    answer.forEach = (answer) => {
+        answer.addEventListener("click", (e) => {
+            console.log(e);
+
+            const clickedAnswer = e.target;
+
+            console.log(clickedAnswer);
+            const answerLetter = clickedAnswer.dataset["answer"];
+            
+        });
+    }
+
 
 function restartGame() {
 
@@ -168,3 +178,5 @@ const questions = [
         {4: '937', correct: false} ],
     }
 ]
+
+}
