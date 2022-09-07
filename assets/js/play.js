@@ -3,15 +3,32 @@
 const question = document.querySelector('#question');
 const answerText = Array.from(document.querySelector('#answer-text'));
 const nextButton = document.querySelector('#next-btn');
-const questionNumber = document.querySelector('#question-number');
+const questionNumberText = document.querySelector('#question-number');
 const points = document.querySelector('#points')
 
 console.log(questions);
-let questionCounter;
+let questionNumber;
 let pointsCounter;
+const MAX_QUESTIONS = 10;
+const SCORE = 20;
 
 function runGame() {
+    questionNumber = 0;
+    points = 0;
+    availableQuestions = getRandomQuestions(questions, MAX_QUESTIONS)
+}
 
+const getRandomQuestions = (arr, n) => {
+    let leng = arr.length;
+    if (n > leng){
+        throw new RangeError(
+            "getRandomQuestions: more elements taken than available"
+        );
+    }
+
+    const shuffled = arr.sort(() => 0.5 - Math.random());
+
+    return (selected = shuffled.slice(0, n));
 }
 
 function restartGame() {
