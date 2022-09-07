@@ -10,86 +10,77 @@ let points = 0
 let questionCounter = 0
 let availableQuestions = []
 
-let questions = [
+const questions = [
     {
         question: 'What was founded first?',
-        1: 'Oxford University',
-        2: 'Aztec Empire',
-        3: 'Cambridge University',
-        4: 'Inca Empire',
-        answer: 'Oxford University',
-    },
-    {
-        question: 'What is the moon?',
-        1: 'moon',
-        2: 'pluto',
-        3: 'mars',
-        4: 'sun',
-        answer: 'moon',
-    },
-    {
-        question: 'What is are the clouds?',
-        1: 'clouds8',
-        2: 'pluto',
-        3: 'mars',
-        4: 'sun',
-        answer: 'clouds8',
-    },
-    {
-        question: 'What is the galaxy?',
-        1: 'galaxy7',
-        2: 'pluto7',
-        3: 'mars7',
-        4: 'sun7',
-        answer: 'galaxy7',
-    },
-    {
-        question: 'What is the sea?',
-        1: 'sea6',
-        2: 'pluto6',
-        3: 'mars6',
-        4: 'sun6',
-        answer: 'test6',
-    },
-    {
-        question: 'What is are the stars?',
-        1: 'stars5',
-        2: 'pluto5',
-        3: 'mars5',
-        4: 'sun5',
-        answer: 'stars5',
-    },
-    {
-        question: 'What is the earth?',
-        1: 'earth4',
-        2: 'pluto4',
-        3: 'mars4',
-        4: 'sun4',
-        answer: 'earth4',
-    },
-    {
-        question: 'What is pluto?',
-        1: 'test3',
-        2: 'pluto3',
-        3: 'mars3',
-        4: 'sun3',
-        answer: 'pluto3',
-    },
-    {
-        question: 'What is mars?',
-        1: 'test',
-        2: 'pluto',
-        3: 'mars',
-        4: 'sun',
-        answer: 'mars',
-    },
-    {
-        question: 'What is the sun?',
-        1: 'test',
-        2: 'pluto',
-        3: 'mars',
-        4: 'sun',
-        answer: 'sun',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
+
+        question: 'What was founded first?',
+        answers: [
+        {1: 'Oxford University', correct: true},
+        {2: 'Aztec Empire', correct: false},
+        {3: 'Cambridge University', correct: false},
+        {4: 'Inca Empire', correct: false} ],
     }
 ]
 
@@ -100,10 +91,10 @@ runGame = () => {
     questionCounter = 0
     points = 0
     availableQuestions = [...questions]
-    getNewQuestion()
+    NewQuestion()
 }
 
-getNewQuestion = () => {
+NewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem('mostRecentPoints', points)
 
@@ -147,15 +138,10 @@ answers.forEach(answer => {
 
         setTimeout (() => {
             selectedAnswer.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            NewQuestion()
         }, 1000)
     })
 })
-
-incrementPoints = num => {
-    points +=num
-    pointsText.innterText = points
-}
 
 runGame()
 
