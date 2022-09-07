@@ -57,7 +57,6 @@ h2 {
   padding: 16px;
 }
 
-
 .answer-container {
   display: flex;
   flex-direction: initial;
@@ -85,3 +84,108 @@ h2 {
 
 }
 
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+
+.logo-dropdown, .landing-page-title {
+  line-height: 24px;
+}
+
+.logo-dropdown {
+  float: left;
+  margin-left: 20px;
+}
+
+.dropbtn i {
+  font-size: 20px;
+  float: left;
+}
+
+  #quiz-container {
+    width: 280px;
+    margin: 50px auto
+  }
+
+  .tallies h2 {
+    font-size: 18px;
+  }
+
+  #question h2 {
+    margin: 2px;
+    font-size: 26px;
+  }
+
+  .answ-text {
+    font-size: 18px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 450px) {
+  #quiz-container {
+    width: 400px;
+  }
+}
+
+/* Medium devices (landscape tablets, 700px and up) */
+@media only screen and (min-width: 700px) {
+  #quiz-container {
+    width: 500px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  #quiz-container {
+    width: 700px;
+}
+#quiz-container h2 {
+    text-align: center;
+    font-size: 34px;
+  }
+  #quiz-container p, li, .index-btn {
+    font-size: 20px;
+  }
+  
+  .index-btn {
+    width: 300px;
+    height: 50px;
+  }
+}
+
+/* Extra Extra large devices (large laptops and desktops, 2100px and up) */
+@media only screen and (min-width: 2100px) {
+  .landing-page-title h1 {
+    font-size: 150px;
+    width: 70rem;
+}
+.landmark-logo, .material-symbols-outlined {
+  font-size: 100px;
+}
+
+.landmark-logo {
+  margin-left: 70px;
+}
+
+#quiz-container {
+  min-width: 1400px;
+}
+
+#quiz-container h2 {
+  text-align: center;
+  font-size: 80px;
+}
+
+#quiz-container p, li, .index-btn {
+  font-size: 50px;
+}
+
+.index-btn {
+  width: 500px;
+  height: 100px;
+}
+}
