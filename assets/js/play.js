@@ -113,8 +113,20 @@ getNewQuestion = () => {
 questionCounter++
 questionNumber.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
 questionNumber.style.width = `${(questionCounter/MAX_QUESTIONS) + 10}`
-}
 
 const questionArray = Math.floor(Math.random() * availableQuestioins.length)
 currentQuestion = availableQuestions[questionArray]
 question.innerText = currentQuestion.question
+
+answers.forEach(answer =>{
+    const number = choice.dataset['number']
+    answer.innterText = currentQuestion['answer' + number]
+})
+
+availableQuestions.splice(questionArray, 1)
+
+acceptingAnswers = true
+
+}
+
+
