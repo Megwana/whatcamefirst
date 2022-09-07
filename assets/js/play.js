@@ -17,22 +17,12 @@ startButton.onclick = ()=>{
 }
 
 //the action of clicking the Next Button
-nextButton.onclick = ()=>{
-    if(questionCount < questions.length - 1) {
-        questionCount++;
-        questionCounter++;
-        pointsCounter++;
-        setQuestion(questionCount);
-    }
-}
 
 //let values
 
 let timeValue = 30;
 let questionCount = 0;
 let points = 0;
-
-
 
 const questions = [
     {

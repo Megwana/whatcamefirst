@@ -77,7 +77,7 @@ body {
   margin: 6px 30px 2px;
 }
 
-#question {
+#question-text {
   text-align: center;
   font-size: 30px;
   color: white;
@@ -98,14 +98,15 @@ h2 {
   padding: 16px;
 }
 
-#next-button {
+.next-button {
   width: 90px;
   height: 50px;
   font-size: 26px;
   background-color:rgba(154, 217, 255, 0.853);
+  border-radius: 10px;
 }
 
-#next-btn:hover {
+.next-button:hover {
   background-color: rgb(0, 170, 170);
   transition: 0.4s;
 }
@@ -175,7 +176,7 @@ h2 {
     font-size: 18px;
   }
 
-  #question h2 {
+  #question-text h2 {
     margin: 2px;
     font-size: 26px;
   }
