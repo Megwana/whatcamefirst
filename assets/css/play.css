@@ -74,7 +74,6 @@ h2 {
 .answer-container:hover {
   box-shadow: 1px 1px 38px -7px rgb(255, 255, 255);
   cursor: pointer;
-
 }
 
 .answ-prefix {
@@ -89,7 +88,6 @@ h2 {
   width: 100%;
   background-color: white;
   margin: 0;
-
 }
 
 .correct {
