@@ -16,13 +16,12 @@ startButton.onclick = ()=>{
     startButton.classList.add("hideme");
 }
 
-//the action of clicking the Next Button
+//the action of clicking the Next Buttonl
 
-//let values
-
-let timeValue = 30;
-let questionCount = 0;
-let points = 0;
+let currentQuestion = {}
+let acceptingAnswers = true
+let points = 0
+let availableQuestions = []
 
 const questions = [
     {
@@ -107,3 +106,38 @@ const questions = [
         {4: '937', correct: false} ],
     }
 ]
+
+const SCORE_POINTS = 200
+const MAX_QUESTIONS = 10
+
+runGame = ()=> {
+    questionCounter = 0
+    points = 0
+    availableQuestions = [...question]
+    setNewQuestion()
+}
+
+setNewQuestion = ()=> {
+    if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentPoints', points)
+        return window.location.assign('/end.html')
+    }
+
+    questionCounter++
+    questionCounter.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    questionCounter.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+
+    const questionIndex = Math.floor(Math.random()* availableQuestions.length)
+    currentQuestion = availableQuestions[questionIndex]
+    question.innerText = currentQuestion.question
+
+    answerText.forEach(answerText => {
+        const number = answerText.dataset['number']
+    answerText.innerText = currentQuestion['answer-Text' + number]
+    })
+
+    availableQuestions.splice(questionIndex, 1)
+
+    acceptingAnswers = true
+}
+
