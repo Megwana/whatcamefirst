@@ -1,3 +1,29 @@
+// Playing Page
+
+const question = document.getElementById('question');
+const answerCards = document.getElementById('answer-text');
+const next = document.getElementById('next-btn');
+
+function runGame() {
+
+}
+
+function shuffle() {
+
+}
+
+function IncrementPoints() {
+
+}
+
+function nextQuestion(e) {
+
+}
+
+function checkAnswer(e){
+    
+}
+
 const questions = [
     {
         id: '1',
