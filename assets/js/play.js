@@ -16,9 +16,17 @@ startButton.onclick = ()=>{
     startButton.classList.add("hideme");
 }
 
-
-
 //the action of clicking the Next Button
+nextButton.onclick = ()=>{
+
+}
+
+//let values
+
+let timeValue = 30;
+let questionCount = 0;
+let points = 0;
+
 
 
 const questions = [
