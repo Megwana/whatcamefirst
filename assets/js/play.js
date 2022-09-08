@@ -1,8 +1,11 @@
 //Required elements listed as const below
 const startButton = document.querySelector('.start-button button');
-const optionText = Array.from(document.querySelectorAll('.option-text'));
-const quizContainer = document.querySelector('.quiz-container');
 const question = document.querySelector(".question");
+const optionText = Array.from(document.querySelectorAll('.option-text'));
+const questNum = document.querySelector(".quest-num");
+const questCounter = document.querySelector(".quest-counter");
+const pointsCounter = document.querySelector(".points-counter");
+const quizContainer = document.querySelector('.quiz-container');
 const nextButton = document.querySelector(".next-button");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
@@ -20,7 +23,7 @@ let questionCounter = 0
 let points = 0
 let availableQuestions = []
 
-const questions = [
+let questions = [
     {
         question: 'What was founded first?',
         answer1: 'Oxford University',
@@ -109,20 +112,19 @@ const MAX_QUESTIONS = 10
 runGame = ()=> {
     questionCounter = 0
     points = 0
-    availableQuestions = [question]
+    availableQuestions = [questions]
     setNewQuestion()
 }
-
 
 setNewQuestion = ()=> {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points)
-        return window.location.assign('/end.html')
+        //return window.location.assign('/end.html')
     }
 
     questionCounter++
-    questionCounter.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    questionCounter.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    questNum.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
     const questionIndex = Math.floor(Math.random()* availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]

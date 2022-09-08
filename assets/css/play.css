@@ -63,13 +63,13 @@ body {
   transform: translate(-0%, -50%) scale(0.9);
 }
 
-.tallies {
+.stats-row {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
 }
 
-.question-counter,
+.quest-counter,
 .points-counter,
 .timer-counter
  {
