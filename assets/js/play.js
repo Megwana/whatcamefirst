@@ -1,12 +1,11 @@
 //Required elements listed as const below
 const startButton = document.querySelector(".start-button button");
-const questionCounter = document.querySelector(".question-counter");
 const quizContainer = document.querySelector(".quiz-container");
 const timerCounter = document.querySelector(".timer-counter");
 const pointsCounter = document.querySelector(".points-counter");
 const question = document.querySelector(".question");
 const answerPrefix = document.querySelector(".answer-prefix");
-const answerText = document.querySelector(".answer-text");
+const answers = Array.from(document.querySelectorAll(".answer-text"));
 const nextButton = document.querySelector(".next-button");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
@@ -20,6 +19,7 @@ startButton.onclick = ()=>{
 
 let currentQuestion = {}
 let acceptingAnswers = true
+let questionCounter = 0
 let points = 0
 let availableQuestions = []
 
@@ -112,12 +112,12 @@ const MAX_QUESTIONS = 10
 runGame = ()=> {
     questionCounter = 0
     points = 0
-    availableQuestions = [...question]
+    availableQuestions = [question]
     setNewQuestion()
 }
 
 setNewQuestion = ()=> {
-    if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points)
         return window.location.assign('/end.html')
     }
@@ -130,9 +130,9 @@ setNewQuestion = ()=> {
     currentQuestion = availableQuestions[questionIndex]
     question.innerText = currentQuestion.question
 
-    answerText.forEach(answerText => {
-        const number = answerText.dataset['number']
-    answerText.innerText = currentQuestion['answer-Text' + number]
+    answers.forEach(answer => {
+        const number = answer.dataset['number']
+        answer.innerText = currentQuestion['answer' + number]
     })
 
     availableQuestions.splice(questionIndex, 1)
@@ -140,8 +140,8 @@ setNewQuestion = ()=> {
     acceptingAnswers = true
 }
 
-answerText.forEach(answerText => {
-    answerText.addEventListener('click', e => {
+answers.forEach(answer => {
+    answer.addEventListener('click', e => {
         if(!acceptingAnswers) return
 
         acceptingAnswers = false
@@ -166,5 +166,5 @@ answerText.forEach(answerText => {
 
 incrementPoints = num => {
     points +=num
-    points
+    points.innerText = points
 }
