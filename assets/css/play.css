@@ -111,27 +111,27 @@ h2 {
   transition: 0.4s;
 }
 
-.answer-container {
+.option-container {
   display: flex;
   flex-direction: initial;
   font-size: 1.2rem;
   margin: 10px;
 }
 
-.answer-container:hover {
+.option-container:hover {
   box-shadow:rgb(0, 170, 170);
   cursor: pointer;
   transition: 0.2s;
 }
 
-#answer-prefix {
+#option-prefix {
   background-color: rgba(154, 217, 255, 0.853);
   color: white;
   padding: 1.2rem 2.2rem;
   margin: 0;
 }
 
-#answer-text {
+#option-text {
   padding: 1.2rem;
   width: 100%;
   background-color: white;

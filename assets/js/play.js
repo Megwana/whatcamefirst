@@ -1,11 +1,8 @@
 //Required elements listed as const below
-const startButton = document.querySelector(".start-button button");
-const quizContainer = document.querySelector(".quiz-container");
-const timerCounter = document.querySelector(".timer-counter");
-const pointsCounter = document.querySelector(".points-counter");
+const startButton = document.querySelector('.start-button button');
+const optionText = Array.from(document.querySelectorAll('.option-text'));
+const quizContainer = document.querySelector('.quiz-container');
 const question = document.querySelector(".question");
-const answerPrefix = document.querySelector(".answer-prefix");
-const answers = Array.from(document.querySelectorAll(".answer-text"));
 const nextButton = document.querySelector(".next-button");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
