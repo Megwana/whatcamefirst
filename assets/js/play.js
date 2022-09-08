@@ -116,6 +116,7 @@ runGame = ()=> {
     setNewQuestion()
 }
 
+
 setNewQuestion = ()=> {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points)
@@ -139,6 +140,8 @@ setNewQuestion = ()=> {
 
     acceptingAnswers = true
 }
+
+setNewQuestion();
 
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
