@@ -126,31 +126,29 @@ setNewQuestion = ()=> {
     questNum.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
 
-    const questionIndex = Math.floor(Math.random()* availableQuestions.length)
-    currentQuestion = availableQuestions[questionIndex]
+    const questionsIndex = Math.floor(Math.random()* availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
 
-    answers.forEach(answer => {
-        const number = answer.dataset['number']
-        answer.innerText = currentQuestion['answer' + number]
+    optionText.forEach(option => {
+        const number = option.dataset['number']
+        option.innerText = currentQuestion['option' + number]
     })
 
-    availableQuestions.splice(questionIndex, 1)
+    availableQuestions.splice(questionsIndex, 1)
 
     acceptingAnswers = true
 }
 
-setNewQuestion();
-
-answers.forEach(answer => {
-    answer.addEventListener('click', e => {
+optionText.forEach(option => {
+    option.addEventListener('click', e => {
         if(!acceptingAnswers) return
 
         acceptingAnswers = false
-        const selectedAnswer = e.target
-        const selectedOption = selectedAnswer.dataset['number']
+        const selectedOption = e.target
+        const selectedAnswer = selectedOption.dataset['number']
 
-        let classToApply = selectedOption == currentQuestion.answer ? '.correct' : '.incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? '.correct' : '.incorrect'
 
         if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS)
@@ -159,7 +157,7 @@ answers.forEach(answer => {
         selectedOption.parentElement.classList.add(classToApply)
         
         setTimeout(() => {
-            selectedAnswer.parentElement.classList.remove(classToApply)
+            selectedOption.parentElement.classList.remove(classToApply)
             setNewQuestion()
         }, 1000)
 
