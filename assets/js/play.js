@@ -15,7 +15,7 @@ startButton.onclick = ()=>{
     startButton.classList.add("hideme");
 };
 
-//the action of clicking the Next Buttonl
+//the action of clicking the Next Button
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -23,6 +23,7 @@ let questionCounter = 0;
 let points = 0;
 let availableQuestions = [];
 
+// All Quiz questions 
 let questions = [
     {
         question: "What was founded first?",
@@ -106,9 +107,11 @@ let questions = [
     },
 ];
 
+// const for score points awarded and maximum number of questions
 const SCORE_POINTS = 20;
 const MAX_QUESTIONS = 10;
 
+// function to begin the game
 beginGame = () => {
     questionCounter = 0;
     points = 0;
@@ -116,6 +119,7 @@ beginGame = () => {
     setNewQuestion();
 };
 
+// function to set new questions after each is answered
 setNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points);
@@ -141,6 +145,7 @@ setNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+// function to select options as correct or incorrect
 optionText.forEach(option => {
     option.addEventListener('click', e => {
         if(!acceptingAnswers) return;
