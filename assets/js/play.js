@@ -2,6 +2,7 @@
 const startButton = document.querySelector('.start-button button');
 const question = document.querySelector("#question-text");
 const optionText = Array.from(document.querySelectorAll('#option-text'));
+let optionContainer = document.querySelector('.option-container');
 const questNum = document.querySelector(".quest-num");
 const questCounter = document.querySelector(".quest-counter");
 const pointsCounter = document.querySelector(".points-counter");
@@ -158,6 +159,8 @@ optionText.forEach(option => {
 
         if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS);
+            option.innerHTML = 'CORRECT!';
+
         }
 
         selectedOption.parentElement.classList.add(classToApply);
