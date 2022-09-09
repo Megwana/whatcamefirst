@@ -109,21 +109,21 @@ let questions = [
 const SCORE_POINTS = 200;
 const MAX_QUESTIONS = 10;
 
-beginGame = ()=> {
+beginGame = () => {
     questionCounter = 0;
     points = 0;
-    availableQuestions = [questions];
+    availableQuestions = [...questions];
     setNewQuestion();
 };
 
-setNewQuestion = ()=> {
+setNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points);
         //return window.location.assign('/end.html')
     }
 
     questionCounter++;
-    questNum.innerText = `question ${questionCounter} of ${MAX_QUESTIONS}`;
+    questNum.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
@@ -148,9 +148,9 @@ optionText.forEach(option => {
         const selectedOption = e.target;
         const selectedAnswer = selectedOption.dataset['number'];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? '.correct' : '.incorrect';
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        if(classToApply === '.correct') {
+        if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS);
         }
 
@@ -168,3 +168,5 @@ incrementPoints = num => {
     points +=num;
     pointsCounter.innerText = points;
 };
+
+beginGame();
