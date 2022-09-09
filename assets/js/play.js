@@ -163,6 +163,8 @@ optionText.forEach(option => {
 
         }
 
+        else option.innerHTML = 'INCORRECT!';
+
         selectedOption.parentElement.classList.add(classToApply);
         
         setTimeout(() => {
