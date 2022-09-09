@@ -33,80 +33,80 @@ let questions = [
         answer: 1,
     },
     {
-        question: "What?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "What was created first?",
+        option1: "Vermeer's 'Girl with a Pearl Earring'",
+        option2: "Michelangelo’s ‘David’ sculpture",
+        option3: "Van Gough's 'The Starry Night'",
+        option4: "Leonardo Da Vinci’s ‘Mona Lisa’ painting",
         answer: 4,
     },
     {
-        question: "founded?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "Who was born first?",
+        option1: "Tony Bennett",
+        option2: "David Attenborough",
+        option3: "Queen Elizabeth II",
+        option4: "Marilyn Monroe",
         answer: 3,
     },
     {
-        question: "Was?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
-        answer: 2,
-    },
-    {
-        question: "first?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
-        answer: 3,
-    },
-    {
-        question: "What was 1?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "What Sport came first?",
+        option1: "Bowling",
+        option2: "Cricket",
+        option3: "Golf",
+        option4: "Volleyball",
         answer: 1,
     },
     {
-        question: "What was 2?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
-        answer: 2,
-    },
-    {
-        question: "founded first 1?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "Which of the following came first?",
+        option1: "Haitian Revolution",
+        option2: "Greek War of Independence",
+        option3: "American Revolution",
+        option4: "French Revolution",
         answer: 3,
     },
     {
-        question: "how are you1?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "Which structure was built first?",
+        option1: "Gherkin",
+        option2: "Statue of Liberty",
+        option3: "Eiffel Tower",
+        option4: "Shard",
+        answer: 2,
+    },
+    {
+        question: "Which Roman Emperor ruled first?",
+        option1: "Hadrian",
+        option2: "Julius Ceaser ",
+        option3: "Marcus Aurelius ",
+        option4: "Augustus",
         answer: 4,
     },
     {
-        question: "how are you?",
-        option1: "OU",
-        option2: "45",
-        option3: "56",
-        option4: "happy",
+        question: "Which of the following came first? ",
+        option1: "Hawaii’s admission into the US",
+        option2: "Alaska’s admission into the US",
+        option3: "Isla Mujeres' admission into the US",
+        option4: "Toronto's admission into the US",
         answer: 1,
+    },
+    {
+        question: "Which Greek Philosopher was born first? ",
+        option1: "Plato",
+        option2: "Aristotle",
+        option3: "Socrates",
+        option4: "Pythagoras",
+        answer: 1,
+    },
+    {
+        question: "What William became Prime Minister first? ",
+        option1: "William Grenville",
+        option2: "William Cavendish",
+        option3: "William Lamb",
+        option4: "William Gladstone",
+        answer: 2,
     },
 ];
 
-const SCORE_POINTS = 200;
+const SCORE_POINTS = 20;
 const MAX_QUESTIONS = 10;
 
 beginGame = () => {
@@ -123,16 +123,17 @@ setNewQuestion = () => {
     }
 
     questionCounter++;
-    questNum.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    questCounter.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;
     questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
-    question.innerText = currentQuestion.question;
+    question.innerHTML = currentQuestion.question;
 
     optionText.forEach(option => {
         const number = option.dataset['number'];
         option.innerText = currentQuestion['option' + number];
+
     });
 
     availableQuestions.splice(questionsIndex, 1);
@@ -160,7 +161,6 @@ optionText.forEach(option => {
             selectedOption.parentElement.classList.remove(classToApply);
             setNewQuestion();
         }, 1000);
-
     });
 });
 
