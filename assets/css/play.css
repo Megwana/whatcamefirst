@@ -56,6 +56,9 @@
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  border: white 2px solid;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .quest-counter,
@@ -63,7 +66,7 @@
 .timer-counter
  {
   text-align: center;
-  margin: 6px 30px 2px;
+  margin: 2px 30px 20px;
 }
 
 .quest-num, #question-text {

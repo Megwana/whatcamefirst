@@ -160,16 +160,17 @@ optionText.forEach(option => {
         if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS);
             option.innerHTML = 'CORRECT!';
+            nextButton.addEventListener("click", setNewQuestion);
 
         }
 
         else option.innerHTML = 'INCORRECT!';
 
         selectedOption.parentElement.classList.add(classToApply);
+        nextButton.addEventListener("click", setNewQuestion);
         
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
-            nextButton.addEventListener("click", setNewQuestion);
         }, 1000);
     });
 });
