@@ -117,16 +117,16 @@ h2 {
   flex-direction: initial;
   font-size: 1.2rem;
   margin: 10px;
+  background-color: white;
 }
 
 .option-container:hover {
-  box-shadow:rgb(0, 170, 170);
-  cursor: pointer;
+  box-shadow: 11px 4px 28px -11px rgba(67,0,252,1);
   transition: 0.2s;
 }
 
 #option-prefix {
-  background-color: rgba(154, 217, 255, 0.853);
+  background-color: rgba(19, 19, 19, 0.853);
   color: white;
   padding: 1.2rem 2.2rem;
   margin: 0;
@@ -135,16 +135,24 @@ h2 {
 #option-text {
   padding: 1.2rem;
   width: 100%;
-  background-color: white;
   margin: 0;
+  cursor: pointer;
 }
 
-#option-prefix.correct {
+#option-text#selected {
+  padding: 1.2rem;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.correct {
   background-color: rgb(10, 200, 10);
+  color: white;
 }
 
-#option-prefix.incorrect {
+.incorrect {
   background-color: rgb(255, 30, 30);
+  color: white;
 }
 
 /* Extra small devices (phones, 450px and down) */
@@ -169,7 +177,7 @@ h2 {
     margin: 50px auto
   }
 
-  .tallies h2 {
+  .stats-row h2 {
     font-size: 18px;
   }
 
@@ -178,7 +186,7 @@ h2 {
     font-size: 26px;
   }
 
-  .answ-text {
+  .option-text {
     font-size: 18px;
   }
 }

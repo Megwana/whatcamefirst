@@ -156,6 +156,7 @@ optionText.forEach(option => {
         }
 
         selectedOption.parentElement.classList.add(classToApply);
+        optionText.parentElement.classList.add("#selected");
         
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
