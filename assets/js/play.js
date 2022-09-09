@@ -164,7 +164,7 @@ optionText.forEach(option => {
         
         setTimeout(() => {
             selectedOption.parentElement.classList.remove(classToApply);
-            setNewQuestion();
+            nextButton.addEventListener("click", setNewQuestion);
         }, 1000);
     });
 });

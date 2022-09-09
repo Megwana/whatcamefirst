@@ -6,30 +6,20 @@
   list-style: none;
 }
 
-body {
-  margin: none;
-  background: url(/assets/images/pyramid.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow-x: hidden;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-}
-
 .start-button button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 200px auto;
-  width: 300px;
-  height: 100px;
-  font-size: 50px;
   background-color: rgb(23, 133, 133);
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  width: 200px;
+  height: 90px;
+  font-size: 40px;
+  padding: 10px;
+
 }
 
 .start-button button.hideme {
@@ -59,7 +49,7 @@ body {
   border-radius: 10px;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-0%, -50%) scale(0.9);
+  transform: translate(-0%, -50%) scale(1);
 }
 
 .stats-row {
@@ -217,7 +207,7 @@ h2 {
     text-align: center;
     font-size: 34px;
   }
-  #quiz-container p, li, .index-btn {
+  #quiz-container p, .index-btn {
     font-size: 20px;
   }
   
