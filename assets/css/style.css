@@ -158,6 +158,27 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+.modal {
+  background-color: white;
+  width: 500px;
+  height: 450px;
+  border-radius: 6px;
+}
+
+.modal h3 {
+  text-align: center;
+}
+
+.modal h3, .modal p {
+  padding: 16px;
+}
+
+.modal li {
+  list-style: decimal;
+  line-height: 26px;
+  padding: 6px;
+}
 /*Footer css styling including social media links*/
 
 footer {
