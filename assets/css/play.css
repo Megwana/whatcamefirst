@@ -34,7 +34,7 @@
 .quiz-container.activeInfo {
   display: flex;
   flex-direction: column;
-  margin: 400px auto;
+  margin: 310px auto;
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -71,30 +71,30 @@
 
 .quest-num, #question-text {
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
 }
 
 h2 {
   color: white;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 #question-counter h2,
 #points-counter h2 {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .controls {
-  margin: 20px;
+  margin: 10px;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
 }
 
 .next-button {
   width: 90px;
   height: 50px;
-  font-size: 26px;
+  font-size: 24px;
   background-color:rgb(154, 217, 255);
   border-radius: 10px;
 }
@@ -107,7 +107,7 @@ h2 {
 .option-container {
   display: flex;
   flex-direction: initial;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 10px;
   background-color: white;
 }
@@ -120,7 +120,7 @@ h2 {
 #option-prefix {
   background-color: rgba(19, 19, 19, 0.853);
   color: white;
-  padding: 1.2rem 2.2rem;
+  padding: 1rem 2rem;
   margin: 0;
 }
 
@@ -167,10 +167,6 @@ h2 {
   #quiz-container {
     width: 280px;
     margin: 50px auto
-  }
-
-  .stats-row h2 {
-    font-size: 18px;
   }
 
   #question-text h2 {

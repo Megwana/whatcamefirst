@@ -132,6 +132,7 @@ setNewQuestion = () => {
     questCounter.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;
     questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
+    // Const below to shuffle the questions at random
     const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerHTML = currentQuestion.question;
@@ -143,7 +144,6 @@ setNewQuestion = () => {
     });
 
     availableQuestions.splice(questionsIndex, 1);
-
     acceptingAnswers = true;
 };
 
@@ -158,14 +158,11 @@ optionText.forEach(option => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-
         if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS);
             option.innerHTML = 'CORRECT!';
             nextButton.addEventListener("click", setNewQuestion);
-
         }
-
 
         else option.innerHTML = 'INCORRECT!';
 
