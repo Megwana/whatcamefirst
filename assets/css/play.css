@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   margin: 200px auto;
-  background-color: rgb(23, 133, 133);
+  background-color: rgb(154, 217, 255);
   color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -95,7 +95,7 @@ h2 {
   width: 90px;
   height: 50px;
   font-size: 26px;
-  background-color:rgba(154, 217, 255, 0.853);
+  background-color:rgb(154, 217, 255);
   border-radius: 10px;
 }
 

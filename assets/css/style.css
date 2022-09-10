@@ -63,7 +63,7 @@ nav {
 
 /* Add a grey background color to dropdown links on hover */
 .menu a:hover {
-  background: #9AD9FF;
+  background: rgb(154, 217, 255);
 }
 
 /* Show the dropdown menu on hover */
