@@ -2,7 +2,7 @@
 const startButton = document.querySelector('.start-button button');
 const question = document.querySelector("#question-text");
 const optionText = Array.from(document.querySelectorAll('#option-text'));
-let optionContainer = document.querySelector('.option-container');
+const optionContainer = document.querySelector('.option-container');
 const questNum = document.querySelector(".quest-num");
 const questCounter = document.querySelector(".quest-counter");
 const pointsCounter = document.querySelector(".points-counter");
@@ -92,11 +92,11 @@ let questions = [
     },
     {
         question: "Which Greek Philosopher was born first? ",
-        option1: "Plato",
+        option1: "Socrates",
         option2: "Aristotle",
-        option3: "Socrates",
+        option3: "Plato",
         option4: "Pythagoras",
-        answer: 1,
+        answer: 3,
     },
     {
         question: "What William became Prime Minister first? ",
@@ -109,7 +109,7 @@ let questions = [
 ];
 
 // const for score points awarded and maximum number of questions
-const SCORE_POINTS = 20;
+const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
 // function to begin the game
@@ -128,10 +128,6 @@ setNewQuestion = () => {
         //return window.location.assign('/end.html')
     }
 
-    questionCounter++;
-    questCounter.innerHTML = `${questionCounter}/${MAX_QUESTIONS}`;
-    questCounter.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
-
     // Const below to shuffle the questions at random
     const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
@@ -140,9 +136,11 @@ setNewQuestion = () => {
     optionText.forEach(option => {
         const number = option.dataset['number'];
         option.innerText = currentQuestion['option' + number];
-
     });
 
+    questionCounter++
+    questCounter.innerText = `${questionCounter} of ${MAX_QUESTIONS}`;
+    
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
 };
@@ -172,10 +170,7 @@ optionText.forEach(option => {
            
             setNewQuestion()
         });
-        
-       // setTimeout(() => {
-        //    
-       // }, 1000);
+    
     });
 });
 
@@ -183,5 +178,6 @@ incrementPoints = num => {
     points +=num;
     pointsCounter.innerText = points;
 };
+
 
 beginGame();
