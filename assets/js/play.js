@@ -122,6 +122,7 @@ beginGame = () => {
 
 // function to set new questions after each is answered
 setNewQuestion = () => {
+
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentPoints', points);
         //return window.location.assign('/end.html')
@@ -157,6 +158,7 @@ optionText.forEach(option => {
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
+
         if(classToApply === 'correct') {
             incrementPoints(SCORE_POINTS);
             option.innerHTML = 'CORRECT!';
@@ -164,14 +166,19 @@ optionText.forEach(option => {
 
         }
 
+
         else option.innerHTML = 'INCORRECT!';
 
         selectedOption.parentElement.classList.add(classToApply);
-        nextButton.addEventListener("click", setNewQuestion);
-        
-        setTimeout(() => {
+        nextButton.addEventListener("click", () => {
             selectedOption.parentElement.classList.remove(classToApply);
-        }, 1000);
+           
+            setNewQuestion()
+        });
+        
+       // setTimeout(() => {
+        //    
+       // }, 1000);
     });
 });
 

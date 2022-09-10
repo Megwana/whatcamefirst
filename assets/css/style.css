@@ -63,7 +63,7 @@ nav {
 
 /* Add a grey background color to dropdown links on hover */
 .menu a:hover {
-  background: rgb(154, 217, 255);
+  background: rgb(153, 216, 255);
 }
 
 /* Show the dropdown menu on hover */
@@ -192,6 +192,12 @@ nav {
   list-style: decimal;
   line-height: 26px;
   padding: 6px;
+}
+
+.modal-close {
+  top: 12px;
+  position: absolute;
+  cursor: pointer;
 }
 /*Footer css styling including social media links*/
 
