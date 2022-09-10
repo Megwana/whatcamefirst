@@ -56,7 +56,7 @@
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  border: rgb(255, 255, 255); 2px solid;
+  border: rgb(255, 255, 255) 2px solid;
   border-radius: 10px;
   margin: 10px;
 }
