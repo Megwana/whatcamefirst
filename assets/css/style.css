@@ -157,6 +157,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.4s;
+}
+
+.modal-box-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
