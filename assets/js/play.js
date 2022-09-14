@@ -1,18 +1,18 @@
 //Required elements listed as const below
-const startButton = document.querySelector(".start-button button");
-const introContainer = document.querySelector(".intro-container");
-const exitButton = introContainer.querySelector(".buttons .quit");
+const startButton = document.querySelector(".startButton button");
+const introContainer = document.querySelector(".introContainer");
+const exitButton = introContainer.querySelector(".buttons .home");
 const contButton = introContainer.querySelector(".buttons .restart");
-const quizContainer = document.querySelector(".quiz-container");
+const quizContainer = document.querySelector(".quizContainer");
 const resultContainer = document.querySelector(".resultContainer");
 const options = document.querySelector(".options");
-const timeDecline = document.querySelector(".stats-row .time-decline");
+const timeDecline = document.querySelector(".statsRow .timeDecline");
 const timeText = document.querySelector(".timer .time-txt");
-const timeCounter = document.querySelector(".timer .time-sec");
-const nextButton = document.querySelector(".next-div .next-button");
-const leftQuCounter = document.querySelector(".stats-row .maximum-questions");
+const timeCounter = document.querySelector(".timer .timeSeconds");
+const nextButton = document.querySelector(".nextDiv .nextButton");
+const leftQuCounter = document.querySelector(".statsRow .maximumQuestions");
 const restartQuiz = resultContainer.querySelector(".buttons .restart");
-const returnHome = resultContainer.querySelector(".buttons .quit");
+const returnHome = resultContainer.querySelector(".buttons .home");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
 
@@ -25,7 +25,7 @@ startButton.onclick = ()=>{
 // Exit button click action
 exitButton.onclick = ()=>{
     introContainer.classList.remove("activeInfo"); //hide info box
-    startButton.classList.remove("hideme");
+    startButton.classList.remove("hideMe");
   }
 
 // Continue button click action
@@ -97,7 +97,18 @@ nextButton.onclick = ()=>{
 // Setting questions and answer options from array
 
 function setQuestions(index) {
-    let questionText = document.querySelector("question-txt")
+    let questionText = document.querySelector("questionText");
+    let questionTag = '<span>' + questions[index].question + '</span>';
+    let optionTag = '<div class="option"><span>'+ questions[index].options[0] 
+    + '</span></div>' + '<div class="option"><span>'+ questions[index].options[1] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].options[2] +'</span></div>'
+    + '<div class="option"><span>'+ questions[index].options[3] +'</span></div>';
+    questionText.innerHTML = questionTag;
+    options.innerHTML = optionTag;
+    const option = options.querySelectorAll("option");
+    for(i=0; i < option.length; i++) {
+        option[i].setAttribute("onclick", "optionClicked(this)");
+    }
 }
 
 

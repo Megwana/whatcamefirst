@@ -34,7 +34,7 @@ body {
   padding: 10px;
 
 }
-.start-button button.hideme {
+.start-button button.hideMe {
   display: none;
 }
 .start-button button:hover {
