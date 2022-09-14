@@ -50,7 +50,7 @@
         </button>
     </div>
     <!--Introductory Container-->
-    <section class="intro-container">
+    <section class="introContainer">
         <div class="intro-title">
             <h2>Welcome!</h2>
         </div>
@@ -69,10 +69,11 @@
             <button class="restart">Continue</button>
         </div>
     </section>
+
     <!--Quiz container-->
-    <div class="quiz-container">
+    <div class="quizContainer">
     <!--Row of Statstics providing the user score and question number they are on for the quiz-->
-        <div class="stats-row">
+        <div class="statsRow">
             <div class="quest-num"> 
                 <h2>Question:</h2>
                 <h2 class="quest-counter">1/10</h2>
@@ -86,8 +87,8 @@
                 <h2 class="points-counter">0</h2>
             </div>
         </div>
-    <!--Question-container that holds the questions for the Quiz-->
-    <section class="quiz-container">
+    <!--Question container that holds the questions for the Quiz-->
+    <section class="quizContainer">
         <div class="stats-row">
             <!-- Question Counter that tracks the question a player is on up to the maximum number of 10-->
               <div class="maximum-questions">
@@ -114,6 +115,23 @@
           </div>
 
     </section>
+
+    <!--Results container-->
+    <div class="resultContainer">
+        <div class="resultText">
+            <h2>The Results are in!</h2>
+            <p>Congratulations, you have reached the end of the 'What Came First?' Quiz.</p>
+            <div class="scoreText">
+                <!--User's points results displayed from Javascript-->
+            </div>
+            <div class="buttons">
+                <button class="restart">Try Again</button>
+                <button class="home">Home</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer and social media links-->
     <footer>
         <div class="footer-content">
             <p class="social-links">
@@ -123,6 +141,7 @@
             </p>
         </div>
     </footer>
+
     <!--Javascript link-->
     <script src="assets/js/play.js"></script>
     <!--Font Awesome link-->
