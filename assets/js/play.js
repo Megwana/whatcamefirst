@@ -47,7 +47,26 @@ let counterLine;
 let widthValue = 0;
 let maxPoints = 200;
 
-
+//restartQuiz button
+restartQuiz.onclick = ()=>{
+    quizContainer.classList.add("activeQuiz"); 
+//show quiz container
+resultContainer.classList.remove("activeResult"); 
+//hide results container
+timeValue = 20; 
+que_count = 0;
+que_numb = 1;
+userScore = 0;
+widthValue = 0;
+setQuestions(que_count);
+questionCounter(que_numb);
+clearInterval(counter);
+clearInterval(counterLine);
+startTime(timeValue);
+startTimerLine(widthValue);
+timeText.textContent = "Time Left";
+nextButton.classList.remove("show");
+}
 
 // All Quiz questions 
 let questions = [
