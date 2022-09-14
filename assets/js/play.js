@@ -68,6 +68,12 @@ timeText.textContent = "Time Left";
 nextButton.classList.remove("show");
 }
 
+// Home button will return the user back to the landing page
+
+returnHome.onclick = ()=>{
+    history.back(-1);
+}
+
 // All Quiz questions 
 let questions = [
     {
