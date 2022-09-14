@@ -218,7 +218,7 @@ width: 600px;
   line-height: 10px;
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.95);
+  transform: scale(0.98);
   transition: all 0.2s ease-in-out;
 }
 
