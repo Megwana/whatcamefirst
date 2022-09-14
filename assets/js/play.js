@@ -111,6 +111,8 @@ function setQuestions(index) {
     }
 }
 
+let iconTickTag = '<div class="icon tick"><i class="fa-solid fa-square-check"></i></div>';
+let iconCrossTag = '<div class="icon cross"><i class="fa-solid fa-square-xmark"></i></div>';
 
 // All Quiz questions 
 let questions = [
@@ -195,3 +197,4 @@ let questions = [
         answer: 2,
     },
 ]
+
