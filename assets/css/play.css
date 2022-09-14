@@ -148,6 +148,18 @@ width: 600px;
   background: #8aebff;
 }
 
+.options .option.correct{
+  color: #000000;
+  background: #10e040;
+  border: 1px solid #000000;
+}
+
+.options .option.incorrect{
+  color: #fafafa;
+  background: #e92539;
+  border: 1px solid #000000;
+}
+
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
