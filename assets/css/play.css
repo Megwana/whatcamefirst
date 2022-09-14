@@ -105,6 +105,28 @@
 width: 600px;
 }
 
+/*Quiz Contents*/
+.quiz-contents {
+  padding: 10px 20px 0;
+  color: white;
+}
+
+.question-txt span{
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.options{
+  padding-top: 16px;
+  display: block;
+  color:white;
+}
+
 .correct {
   background-color: rgb(10, 200, 10);
   color: white;
