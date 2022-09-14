@@ -67,32 +67,22 @@
             </div>
         </div>
     <!--Question-container that holds the questions for the Quiz-->
-        <div id="question-container"> 
-            <div class="question-title">
-                <h2 id="question-text"></h2>
-            </div>
-    <!--container which holds all the options to select from-->
-            <div class="option-container">
-                <p id="option-prefix">A</p>
-                <p id="option-text" data-number="1"></p>
-            </div>
-            <div class="option-container">
-                <p id="option-prefix">B</p>
-                <p id="option-text" data-number="2"></p>
-            </div>
-            <div class="option-container">
-                <p id="option-prefix">C</p>
-                <p id="option-text" data-number="3"></p>
-            </div>
-            <div class="option-container">
-                <p id="option-prefix">D</p>
-                <p id="option-text" data-number="4"></p>
-            </div>
-        </div>
-        <div class="controls">
-            <button class="next-button" aria-label="Next Button">Next</button>
-        </div>
-    </div>
+    <section class="quiz-container">
+        <div class="stats-row">
+            <!-- Question Counter that tracks the question a player is on up to the maximum number of 10-->
+              <div class="maximum-questions">
+              </div>
+            <!-- Time Counter that will countdown the time a play has left to answer a question from 20 to 0 using JavaScript -->
+              <div class="timer">
+                  <div class="time-txt">Time Left:</div>
+                  <div class="time-sec">20</div>
+              </div>
+            <!-- Along with the counter, a time line runs along beneath to visually display how long a player has to answer the question-->
+              <div class="time-decline"></div>
+          </div>
+
+    </section>
+
     <footer>
         <div class="footer-content">
             <p class="social-links">
