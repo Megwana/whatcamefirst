@@ -28,7 +28,14 @@ exitButton.onclick = ()=>{
     startButton.classList.remove("hideme");
   }
 
-//the action of clicking the Next Button
+contButton.onclick = ()=>{
+    introContainer.classList.remove("activeInfo"); //hide info box
+    quizContainer.classList.add("activeQuiz"); //show quiz box
+    setQuestions(0); //calling setQestions function
+    questionCounter(1); //passing 1 parameter to questionCounter
+    startTimer(20); //calling startTimer function
+    startTimerLine(0); //calling startTimerLine function
+}
 
 let currentQuestion = {};
 let acceptingAnswers = true;
