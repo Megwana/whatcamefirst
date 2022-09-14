@@ -94,6 +94,13 @@ nextButton.onclick = ()=>{
     }
 }
 
+// Setting questions and answer options from array
+
+function setQuestions(index) {
+    let questionText = document.querySelector("question-txt")
+}
+
+
 // All Quiz questions 
 let questions = [
     {

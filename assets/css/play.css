@@ -331,6 +331,7 @@ width: 600px;
   pointer-events: none;
 }
 
+/* Results text */
 .resultContainer .result-text h2 {
   display: flex;
   align-items: center;
@@ -347,6 +348,7 @@ width: 600px;
   color: white;
 }
 
+/* Results points */
 .resultContainer .scoreText span{
   display: flex;
   margin: 8px 0;
