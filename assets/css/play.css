@@ -227,6 +227,12 @@ width: 600px;
   text-decoration: underline;
 }
 
+.next-div button.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
