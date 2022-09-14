@@ -250,17 +250,17 @@ width: 600px;
   float: left;
 }
 
-  #quiz-container {
+  .quiz-container {
     width: 280px;
     margin: 50px auto
   }
 
-  #question-text h2 {
+  .question-text h2 {
     margin: 2px;
     font-size: 26px;
   }
 
-  .option-text {
+  .options {
     font-size: 18px;
   }
 }
