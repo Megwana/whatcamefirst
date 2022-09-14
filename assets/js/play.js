@@ -28,6 +28,7 @@ exitButton.onclick = ()=>{
     startButton.classList.remove("hideme");
   }
 
+// Continue button click action
 contButton.onclick = ()=>{
     introContainer.classList.remove("activeInfo"); //hide info box
     quizContainer.classList.add("activeQuiz"); //show quiz box
@@ -37,11 +38,16 @@ contButton.onclick = ()=>{
     startTimerLine(0); //calling startTimerLine function
 }
 
-let currentQuestion = {};
-let acceptingAnswers = true;
-let questionCounter = 0;
-let points = 0;
-let availableQuestions = [];
+let timeValue =  20;
+let que_count = 0;
+let que_numb = 1;
+let userScore = 0;
+let counter;
+let counterLine;
+let widthValue = 0;
+let maxPoints = 200;
+
+
 
 // All Quiz questions 
 let questions = [
@@ -126,81 +132,3 @@ let questions = [
         answer: 2,
     },
 ];
-
-// const for score points awarded and maximum number of questions
-const SCORE_POINTS = 20;
-const MAX_QUESTIONS = 10;
-
-// function to begin the game
-beginGame = () => {
-    questionCounter = 0;
-    points = 0;
-    availableQuestions = [...questions];
-    setNewQuestion();
-};
-
-questionCounter++
-questNum.innerHTML = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-questCounter.style.Array = `${(questionCounter/MAX_QUESTIONS)}%}`;
-
-// function to set new questions after each is answered
-setNewQuestion = () => {
-
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentPoints', points);
-        //return window.location.assign('/end.html')
-    }
-    const totalQuestions = question.length;
-    for (let i=0; i<totalQuestions; i++){
-        availableQuestions.push(question[i])
-    }
-    questionCounter.innerHTML = "Question" + (questCounter +1) + " of " + question.length
-    // Const below to shuffles at random
-    const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
-    currentQuestion = availableQuestions[questionsIndex];
-    question.innerHTML = currentQuestion.question;
-
-    optionText.forEach(option => {
-        const number = option.dataset['number'];
-        option.innerText = currentQuestion['option' + number];
-    });
-    
-    availableQuestions.splice(questionsIndex, 1);
-    acceptingAnswers = true;
-};
-
-// function to select options as correct or incorrect
-optionText.forEach(option => {
-    option.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
-
-        acceptingAnswers = false;
-        const selectedOption = e.target;
-        const selectedAnswer = selectedOption.dataset['number'];
-
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
-        if(classToApply === 'correct') {
-            incrementPoints(SCORE_POINTS);
-            option.innerHTML = 'CORRECT!';
-            nextButton.addEventListener("click", setNewQuestion);
-        }
-
-        else option.innerHTML = 'INCORRECT!';
-
-        selectedOption.parentElement.classList.add(classToApply);
-        nextButton.addEventListener("click", () => {
-            selectedOption.parentElement.classList.remove(classToApply);
-           
-            setNewQuestion()
-        });
-    
-    });
-});
-
-incrementPoints = num => {
-    points +=num;
-    pointsCounter.innerText = points;
-};
-
-beginGame();
