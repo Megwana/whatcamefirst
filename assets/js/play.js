@@ -192,6 +192,7 @@ function startTimer(time){
     }
 }
 
+// startTimerLine function
 function startTimerLine(time){
     counterLine = setInterval(timer, 33);
     function timer(){
@@ -201,6 +202,12 @@ function startTimerLine(time){
             clearInterval(counterLine); 
         }
     }
+}
+
+// questionCounter function
+function questionCounter(index){
+    let totalQueCounTag = '<span>Question:<p>'+ index +'</p> of <p>'+ questions.length +'</p></span>';
+    leftQuCounter.innerHTML = totalQueCounTag; 
 }
 
 // All Quiz questions 
