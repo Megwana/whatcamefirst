@@ -90,6 +90,7 @@ nextButton.onclick = ()=>{
     else {
         clearInterval(counter);
         clearInterval(counterLine);
+        showResult();
     }
 // All Quiz questions 
 let questions = [
