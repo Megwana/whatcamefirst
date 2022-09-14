@@ -7,14 +7,12 @@ const quizContainer = document.querySelector(".quizContainer");
 const resultContainer = document.querySelector(".resultContainer");
 const options = document.querySelector(".options");
 const timeDecline = document.querySelector(".statsRow .timeDecline");
-const timeText = document.querySelector(".timer .time-txt");
+const timeText = document.querySelector(".timer .timeText");
 const timeCounter = document.querySelector(".timer .timeSeconds");
 const nextButton = document.querySelector(".nextDiv .nextButton");
 const leftQuCounter = document.querySelector(".statsRow .maximumQuestions");
 const restartQuiz = resultContainer.querySelector(".buttons .restart");
 const returnHome = resultContainer.querySelector(".buttons .home");
-
-//the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
 
 // Start button click action
 startButton.onclick = ()=>{
@@ -160,6 +158,36 @@ function showResult(){
     else{ // if user scored less than 100
         let scoreTag = '<span> Nice try, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
         scoreText.innerHTML = scoreTag;
+    }
+}
+
+// startTimer function
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCounter.textContent = time; 
+        time--; 
+        if(time < 9){ 
+            let addZero = timeCounter.textContent; 
+            timeCounter.textContent = "0" + addZero;
+        }
+        if(time < 0){ 
+            clearInterval(counter); 
+            timeText.textContent = "Countdown:"; 
+            const allOptions = options.children.length; 
+            let correcAnswer = questions[queCount].answer; 
+            for(i=0; i < allOptions; i++){
+                if(options.children[i].textContent == correcAnswer){
+                    options.children[i].setAttribute("class", "option correct"); 
+                    options.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+                    console.log("Time Off: Auto selected correct answer.");
+                }
+            }
+            for(i=0; i < allOptions; i++){
+                options.children[i].classList.add("disabled"); 
+            }
+            nextButton.classList.add("show"); 
+        }
     }
 }
 
