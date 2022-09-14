@@ -84,6 +84,22 @@ color: white;
 color: white;
 }
 
+.guidance-list ul li{
+  padding: 10px 36px;
+  color: white;
+  list-style: upper-roman inside;
+}
+
+.guidance-list .guidance{
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.guidance-list .guidance span{
+    font-weight: 700;
+    color: #ecf2fe;
+}
+
 /* Quiz Container */
 .quiz-container{
   width: 600px;
