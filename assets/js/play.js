@@ -50,6 +50,7 @@ restartQuiz.onclick = ()=>{
     quizContainer.classList.add("activeQuiz"); 
 //show quiz container
 resultContainer.classList.remove("activeResult"); 
+
 //hide results container
 timeValue = 20; 
 queCount = 0;
@@ -163,7 +164,7 @@ function showResult(){
 
 // startTimer function
 function startTimer(time){
-    counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 100);
     function timer(){
         timeCounter.textContent = time; 
         time--; 
@@ -187,6 +188,17 @@ function startTimer(time){
                 options.children[i].classList.add("disabled"); 
             }
             nextButton.classList.add("show"); 
+        }
+    }
+}
+
+function startTimerLine(time){
+    counterLine = setInterval(timer, 33);
+    function timer(){
+        time += 1;
+        timeDecline.style.width = time + "px";
+        if(time > 600){ 
+            clearInterval(counterLine); 
         }
     }
 }
