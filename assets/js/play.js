@@ -69,11 +69,28 @@ nextButton.classList.remove("show");
 }
 
 // Home button will return the user back to the landing page
-
 returnHome.onclick = ()=>{
     history.back(-1);
 }
 
+// Next button
+nextButton.onclick = ()=>{
+    if(que_count < questions.length - 1){
+        que_count++;
+        que_numb++;
+        setQuestions(que_count);
+        questionCounter(que_numb);
+        clearInterval(counter);
+        clearInterval(counterLine);
+        startTimer(timeValue);
+        startTimerLine(widthValue);
+        timeText.textContent = "Time Left:";
+        nextButton.classList.remove("show"); 
+    }
+    else {
+        clearInterval(counter);
+        clearInterval(counterLine);
+    }
 // All Quiz questions 
 let questions = [
     {
