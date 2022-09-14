@@ -41,6 +41,16 @@
   transition: all 0.2s ease;
 }
 
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 10px;
+  margin: 10px;
+  height: 70px;
+  padding: 0 30px;
+}
 
 .correct {
   background-color: rgb(10, 200, 10);
