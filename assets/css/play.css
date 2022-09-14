@@ -163,6 +163,19 @@ width: 600px;
 .options .option.disabled{
   pointer-events: none;
 }
+
+.icon{
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  line-height: 20px;
+}
+
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
