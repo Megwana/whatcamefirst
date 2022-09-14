@@ -1,13 +1,18 @@
 //Required elements listed as const below
-const startButton = document.querySelector('.start-button button');
-const question = document.querySelector("#question-text");
-const optionText = Array.from(document.querySelectorAll('#option-text'));
-const optionContainer = document.querySelector('.option-container');
-const questNum = document.querySelector(".quest-num");
-const questCounter = document.querySelector(".quest-counter");
-const pointsCounter = document.querySelector(".points-counter");
-const quizContainer = document.querySelector('.quiz-container');
-const nextButton = document.querySelector(".next-button");
+const startButton = document.querySelector(".start-button button");
+const introContainer = document.querySelector(".intro-container");
+const exitButton = introContainer.querySelector(".buttons .quit");
+const contButton = introContainer.querySelector(".buttons .restart");
+const quizContainer = document.querySelector(".quiz-container");
+const resultContainer = document.querySelector(".resultContainer");
+const options = document.querySelector(".options");
+const timeDecline = document.querySelector(".stats-row .time-decline");
+const timeText = document.querySelector(".timer .time-txt");
+const timeCounter = document.querySelector(".timer .time-sec");
+const nextButton = document.querySelector(".next-div .next-button");
+const leftQuCounter = document.querySelector(".stats-row .maximum-questions");
+const restartQuiz = resultContainer.querySelector(".buttons .restart");
+const returnHome = resultContainer.querySelector(".buttons .quit");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
 
@@ -68,10 +73,10 @@ let questions = [
     },
     {
         question: "Which structure was built first?",
-        option1: "Gherkin",
+        option1: "The Gherkin",
         option2: "Statue of Liberty",
         option3: "Eiffel Tower",
-        option4: "Shard",
+        option4: "The Shard",
         answer: 2,
     },
     {
@@ -109,7 +114,7 @@ let questions = [
 ];
 
 // const for score points awarded and maximum number of questions
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 20;
 const MAX_QUESTIONS = 10;
 
 // function to begin the game
@@ -120,6 +125,10 @@ beginGame = () => {
     setNewQuestion();
 };
 
+questionCounter++
+questNum.innerHTML = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+questCounter.style.Array = `${(questionCounter/MAX_QUESTIONS)}%}`;
+
 // function to set new questions after each is answered
 setNewQuestion = () => {
 
@@ -127,8 +136,12 @@ setNewQuestion = () => {
         localStorage.setItem('mostRecentPoints', points);
         //return window.location.assign('/end.html')
     }
-
-    // Const below to shuffle the questions at random
+    const totalQuestions = question.length;
+    for (let i=0; i<totalQuestions; i++){
+        availableQuestions.push(question[i])
+    }
+    questionCounter.innerHTML = "Question" + (questCounter +1) + " of " + question.length
+    // Const below to shuffles at random
     const questionsIndex = Math.floor(Math.random()* availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerHTML = currentQuestion.question;
@@ -137,9 +150,6 @@ setNewQuestion = () => {
         const number = option.dataset['number'];
         option.innerText = currentQuestion['option' + number];
     });
-
-    questionCounter++
-    questCounter.innerText = `${questionCounter} of ${MAX_QUESTIONS}`;
     
     availableQuestions.splice(questionsIndex, 1);
     acceptingAnswers = true;
@@ -178,6 +188,5 @@ incrementPoints = num => {
     points +=num;
     pointsCounter.innerText = points;
 };
-
 
 beginGame();

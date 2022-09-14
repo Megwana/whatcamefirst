@@ -9,7 +9,6 @@
 }
 
 body {
-  margin: 0;
   background: url(/assets/images/pyramid.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,7 +179,7 @@ nav {
 
 .modal h3 {
   text-align: center;
-  background-color: rgba(19, 19, 19, 0.853);
+  border: #000000;
   color: white;
 }
 
@@ -189,7 +188,7 @@ nav {
 }
 
 .modal li {
-  list-style: decimal;
+  list-style: upper-roman;
   line-height: 26px;
   padding: 6px;
 }
