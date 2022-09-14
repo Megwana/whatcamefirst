@@ -44,7 +44,7 @@ body {
 
 /* Introductory Container styling */
 
-.intro-container, .quiz-container, .resultContainer{
+.intro-container, .quiz-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,6 +56,32 @@ body {
   color: white
   width: 600px;
   height: 500px;
+}
+
+.intro-container{
+  width: 550px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) scale(0.9);
+background-color: rgba(0, 0, 0, 0.734);
+color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+color: white;
+}
+
+.intro-container .intro-title h2{
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+  font-size: 40px;
+  font-weight: 600;
+color: white;
 }
 
 /* Quiz Container */
