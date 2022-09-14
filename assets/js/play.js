@@ -47,7 +47,7 @@ let counterLine;
 let widthValue = 0;
 let maxPoints = 200;
 
-//restartQuiz button
+// Restart Quiz button click action
 restartQuiz.onclick = ()=>{
     quizContainer.classList.add("activeQuiz"); 
 //show quiz container
@@ -68,12 +68,12 @@ timeText.textContent = "Time Left";
 nextButton.classList.remove("show");
 }
 
-// Home button will return the user back to the landing page
+// Home button will return the user back to the landing page click action
 returnHome.onclick = ()=>{
     history.back(-1);
 }
 
-// Next button
+// Next button click action
 nextButton.onclick = ()=>{
     if(que_count < questions.length - 1){
         que_count++;
@@ -92,6 +92,8 @@ nextButton.onclick = ()=>{
         clearInterval(counterLine);
         showResult();
     }
+}
+
 // All Quiz questions 
 let questions = [
     {
@@ -174,4 +176,4 @@ let questions = [
         option4: "William Gladstone",
         answer: 2,
     },
-];
+]
