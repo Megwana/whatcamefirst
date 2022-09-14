@@ -19,7 +19,7 @@ body {
 }
 
 /* Start Button styling */
-.start-button button {
+.startButton button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,17 +34,17 @@ body {
   padding: 10px;
 
 }
-.start-button button.hideMe {
+.startButton button.hideMe {
   display: none;
 }
-.start-button button:hover {
+.startButton button:hover {
   background-color: #8aebff;
   transition: 0.2;
 }
 
 /* Introductory Container styling */
 
-.intro-container, .quiz-container {
+.introContainer, .quizContainer, .resultContainer{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,7 +58,15 @@ body {
   height: 500px;
 }
 
-.intro-container{
+.intro-container.activeInfo, .quiz-container.activeQuiz, .resultContainer.activeResult{
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  color: white;
+}
+
+.introContainer{
   width: 550px;
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(0.9);
@@ -70,7 +78,7 @@ color: white;
 color: white;
 }
 
-.intro-container .intro-title h2{
+.introContainer .intro-title h2{
   height: 70px;
   width: 100%;
   border-bottom: 1px solid lightgrey;
@@ -100,7 +108,7 @@ color: white;
     color: #ecf2fe;
 }
 
-.intro-container .buttons{
+.introContainer .buttons{
   height: 60px;
   display: flex;
   align-items: center;
@@ -110,7 +118,7 @@ color: white;
   border-bottom-right-radius: 10px;
 }
 
-.intro-container .buttons button{
+.introContainer .buttons button{
   margin: 0 4px;
   height: 40px;
   width: 100px;
@@ -125,7 +133,7 @@ color: white;
 }
 
 /* Quiz Container */
-.quiz-container{
+.quizContainer{
   width: 600px;
   color: #fff;
   border-radius: 5px;
@@ -137,7 +145,7 @@ color: white;
 }
 
 /* stats-row container showing questions counter and time counter*/
-.stats-row {
+.statsRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -147,32 +155,32 @@ color: white;
   height: 70px;
   padding: 0 30px;
 }
-.stats-row .title{
+.statsRow .title{
   font-size: 20px;
   font-weight: 600;
   color:white;
 }
 
 /* Question counter styling */
-.stats-row .maximum-questions span{
+.statsRow .maximumQuestions span{
   display: flex;
   user-select: none;
   color: white;
   font-size: 20px;
 }
-.stats-row .maximum-questions span p{
+.statsRow .maximumQuestions span p{
   font-weight: 500;
   font-size: 20px;
   padding: 0 4px;
   color: white;
 }
-.stats-row .maximum-questions span p:first-child{
+.statsRow .maximumQuestions span p:first-child{
   padding-left: 8px;
   font-size: 20px;
 }
 
 /* time counter styling */
-.stats-row .timer{
+.statsRow .timer{
     color: white;
     height: 50px;
     border-radius: 5px;
@@ -182,13 +190,13 @@ color: white;
     width: 156px;
   color:white;
 }
-.stats-row .timer .time-txt{
+.statsRow .timer .timeText{
     font-weight: 500;
     font-size: 20px;
     user-select: none;
   color:white;
 }
-.stats-row .timer .time-sec{
+.statsRow .timer .timeSeconds{
     font-size: 20px;
     font-weight: 500;
     height: 30px;
@@ -205,11 +213,11 @@ color: white;
 }
 
 /* Quiz Contents styling */
-.quiz-contents {
+.quizContents {
   padding: 10px 20px 0;
   color: white;
 }
-.question-txt span{
+.questionText span{
   font-size: 30px;
   font-weight: 600;
   color: white;
@@ -223,7 +231,7 @@ color: white;
   display: block;
   color:white;
 }
-.quiz-contents .options .option{
+.quizContents .options .option{
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 6px;
@@ -268,14 +276,14 @@ color: white;
 }
 
 /*Next Button styling */
-.next-div {
+.nextDiv {
   height: 60px;
   padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.next-div button{
+.nextDiv button{
   height: 40px;
   justify-content: center;
   padding: 0 12px;
@@ -293,25 +301,25 @@ color: white;
   transform: scale(0.98);
   transition: all 0.2s ease-in-out;
 }
-.next-div button:hover{
+.nextDiv button:hover{
   background: #ecfcfe;
   text-decoration: underline;
 }
-.next-div button.show{
+.nextDiv button.show{
   opacity: 1;
   pointer-events: auto;
   transform: scale(1);
 }
 
 /* time decreasing line styling */
-.stats-row .time-decline{
+.statsRow .timeDecline{
   position: absolute;
   bottom: 0px;
   left: 0px;
   height: 8px;
   background: #8aebff;
 }
-.time-decline {
+.timeDecline {
 width: 600px;
 }
 
@@ -332,7 +340,7 @@ width: 600px;
 }
 
 /* Results text */
-.resultContainer .result-text h2 {
+.resultContainer .resultText h2 {
   display: flex;
   align-items: center;
   align-content: center;
@@ -342,7 +350,7 @@ width: 600px;
   color: white;
 }
 
-.resultContainer .result-text p{
+.resultContainer .resultText p{
   font-size: 20px;
   font-weight: 500;
   color: white;

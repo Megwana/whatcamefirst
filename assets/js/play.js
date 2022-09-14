@@ -142,7 +142,26 @@ function optionClicked(answer) {
             options.children[i].classList.add("disabled");
         }
         nextButton.classList.add("show");}
-        
+
+// showResult function
+function showResult(){
+    introContainer.classList.remove("activeInfo"); 
+    quizContainer.classList.remove("activeQuiz"); 
+    resultContainer.classList.add("activeResult"); 
+    const scoreText = resultContainer.querySelector(".scoreText");
+    if (userScore > 140){ 
+        let scoreTag = '<span> Amazing, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if(userScore > 100){ // if user scored more than 1
+        let scoreTag = '<span> Well done, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else{ // if user scored less than 100
+        let scoreTag = '<span> Nice try, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+}
 
 // All Quiz questions 
 let questions = [
