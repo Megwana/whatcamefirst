@@ -179,8 +179,10 @@ nav {
 
 .modal h3 {
   text-align: center;
-  border: #000000;
-  color: white;
+  border: black solid 1px;
+  color: black;
+  border-radius: 6px;
+  margin: 6px;
 }
 
 .modal h3, .modal p {
@@ -194,10 +196,24 @@ nav {
 }
 
 .modal-close {
-  top: 12px;
-  position: absolute;
   cursor: pointer;
 }
+
+.modal-close i {
+    font-weight: 300;
+  font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.modal-close i:hover {
+  transition: all 1.5s;
+  transform: rotateY(360deg);
+}
+
 /*Footer css styling including social media links*/
 
 footer {

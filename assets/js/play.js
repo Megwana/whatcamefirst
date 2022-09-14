@@ -16,19 +16,18 @@ const returnHome = resultContainer.querySelector(".buttons .home");
 
 // Start button click action
 startButton.onclick = ()=>{
-    quizContainer.classList.add("activeInfo"); //show info box
+    introContainer.classList.add("activeIntro"); //show info box
     startButton.classList.add("hideme");
 };
 
-// Exit button click action
-exitButton.onclick = ()=>{
-    introContainer.classList.remove("activeInfo"); //hide info box
-    startButton.classList.remove("hideMe");
-  }
+//Exit button click action
+exitButton.onclick = ()=> {
+    introContainer.classList.remove("activeIntro"); //hide info box
+    startButton.classList.remove("hideMe");}
 
 // Continue button click action
 contButton.onclick = ()=>{
-    introContainer.classList.remove("activeInfo"); //hide info box
+    introContainer.classList.remove("activeIntro"); //hide info box
     quizContainer.classList.add("activeQuiz"); //show quiz box
     setQuestions(0); //calling setQestions function
     questionCounter(1); //passing 1 parameter to questionCounter
@@ -144,7 +143,7 @@ function optionClicked(answer) {
 
 // showResult function
 function showResult(){
-    introContainer.classList.remove("activeInfo"); 
+    introContainer.classList.remove("activeIntro"); 
     quizContainer.classList.remove("activeQuiz"); 
     resultContainer.classList.add("activeResult"); 
     const scoreText = resultContainer.querySelector(".scoreText");
@@ -213,84 +212,225 @@ function questionCounter(index){
 // All Quiz questions 
 let questions = [
     {
-        question: "What was founded first?",
-        option1: "Oxford University",
-        option2: "Aztec Empire",
-        option3: "Cambridge University",
-        option4: "Inca Empire",
-        answer: 1,
-    },
+    numb: 1,
+    question:"What was founded first?",
+    answer: "Oxford University",
+    options: [
+        "Oxford University",
+        "Aztec Empire",
+        "Cambridge University",
+        "Inca Empire",
+    ]
+  },
     {
-        question: "What was created first?",
-        option1: "Vermeer's 'Girl with a Pearl Earring'",
-        option2: "Michelangelo’s ‘David’ sculpture",
-        option3: "Van Gough's 'The Starry Night'",
-        option4: "Leonardo Da Vinci’s ‘Mona Lisa’ painting",
-        answer: 4,
-    },
+    numb: 2,
+    question: "What was created first?",
+    answer: "Leonardo Da Vinci’s ‘Mona Lisa’ painting",
+    options: [
+      "Vermeer's 'Girl with a Pearl Earring'",
+      "Michelangelo’s ‘David’ sculpture",
+      "Van Gough's 'The Starry Night'",
+      "Leonardo Da Vinci’s ‘Mona Lisa’ painting",
+    ]
+  },
     {
-        question: "Who was born first?",
-        option1: "Tony Bennett",
-        option2: "David Attenborough",
-        option3: "Queen Elizabeth II",
-        option4: "Marilyn Monroe",
-        answer: 3,
-    },
+    numb: 3,
+    question: "Who was born first?",
+    answer: "Queen Elizabeth II",
+    options: [
+      "Tony Bennett",
+      "David Attenborough",
+      "Queen Elizabeth II",
+      "Marilyn Monroe",
+    ]
+  },
     {
-        question: "What Sport came first?",
-        option1: "Bowling",
-        option2: "Cricket",
-        option3: "Golf",
-        option4: "Volleyball",
-        answer: 1,
-    },
+    numb: 4,
+    question: "Which of the following came first?",
+    answer: "Bowling",
+    options: [
+      "Bowling",
+      "Cricket",
+      "Golf",
+      "Volleyball",
+    ]
+  },
     {
-        question: "Which of the following came first?",
-        option1: "Haitian Revolution",
-        option2: "Greek War of Independence",
-        option3: "American Revolution",
-        option4: "French Revolution",
-        answer: 3,
-    },
-    {
-        question: "Which structure was built first?",
-        option1: "The Gherkin",
-        option2: "Statue of Liberty",
-        option3: "Eiffel Tower",
-        option4: "The Shard",
-        answer: 2,
-    },
-    {
-        question: "Which Roman Emperor ruled first?",
-        option1: "Hadrian",
-        option2: "Julius Ceaser ",
-        option3: "Marcus Aurelius ",
-        option4: "Augustus",
-        answer: 4,
-    },
-    {
-        question: "Which of the following came first? ",
-        option1: "Hawaii’s admission into the US",
-        option2: "Alaska’s admission into the US",
-        option3: "Isla Mujeres' admission into the US",
-        option4: "Toronto's admission into the US",
-        answer: 1,
-    },
-    {
-        question: "Which Greek Philosopher was born first? ",
-        option1: "Socrates",
-        option2: "Aristotle",
-        option3: "Plato",
-        option4: "Pythagoras",
-        answer: 3,
-    },
-    {
-        question: "What William became Prime Minister first? ",
-        option1: "William Grenville",
-        option2: "William Cavendish",
-        option3: "William Lamb",
-        option4: "William Gladstone",
-        answer: 2,
-    },
-]
+    numb: 5,
+    question: "Which of the following came first?",
+    answer: "Haitian Revolution",
+    options:[
+      "Haitian Revolution",
+      "Greek War of Independence",
+      "American Revolution",
+      "French Revolution",
+    ]
+  },
+      {
+    numb: 6,
+    question: "Which structure was built first?",
+    answer: "Statue of Liberty",
+    options:[
+      "The Gherkin",
+      "Statue of Liberty",
+      "Eiffel Tower",
+      "The Shard",
+    ]
+  },
+      {
+    numb: 7,
+    question: "Which Roman Emperor ruled first?",
+    answer: "Augustus",
+    options:[
+      "Hadrian",
+      "Julius Ceaser",
+      "Marcus Aurelius",
+      "Augustus",
+    ]
+  },
+      {
+    numb: 8,
+    question: "Which of the following came first? ",
+    answer: "Hawaii’s admission into the US",
+    options:[
+      "Hawaii’s admission into the US",
+      "Alaska’s admission into the US",
+      "Isla Mujeres' admission into the US",
+      "Toronto's admission into the US",
+    ]
+  },
+      {
+    numb: 9,
+    question: "Which Greek Philosopher was born first?",
+    answer: "Plato",
+    options:[
+      "Socrates",
+      "Aristotle",
+      "Plato",
+      "Pythagoras",
+    ]
+  },
+      {
+    numb: 10,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+
+        {
+    numb: 11,
+    question: "What came first ",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+      {
+    numb: 12,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 13,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 14,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 15,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 16,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 17,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 18,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 19,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+        {
+    numb: 20,
+    question: "What William became Prime Minister first?",
+    answer: "William Cavendish",
+    options:[
+      "William Grenville",
+      "William Cavendish",
+      "William Gladstone",
+      "William Lamb",
+    ]
+  },
+ ];
 
