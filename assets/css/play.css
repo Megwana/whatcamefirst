@@ -127,14 +127,25 @@ width: 600px;
   color:white;
 }
 
-.correct {
-  background-color: rgb(10, 200, 10);
+.quiz-contents .options .option{
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 20px;
+  margin-bottom: 14px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
 }
 
-.incorrect {
-  background-color: rgb(255, 30, 30);
-  color: white;
+.options .option:hover{
+  color: #000000;
+  background: #8aebff;
 }
 
 /* Extra small devices (phones, 450px and down) */
