@@ -160,6 +160,9 @@ width: 600px;
   border: 1px solid #000000;
 }
 
+.options .option.disabled{
+  pointer-events: none;
+}
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
