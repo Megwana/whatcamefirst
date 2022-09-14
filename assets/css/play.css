@@ -58,6 +58,25 @@
   color:white;
 }
 
+.stats-row .maximum-questions span{
+  display: flex;
+  user-select: none;
+  color: white;
+  font-size: 20px;
+}
+
+.stats-row .maximum-questions span p{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 4px;
+  color: white;
+}
+
+.stats-row .maximum-questions span p:first-child{
+  padding-left: 8px;
+  font-size: 20px;
+}
+
 .stats-row .timer{
     color: white;
     height: 50px;
