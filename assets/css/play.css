@@ -52,6 +52,46 @@
   padding: 0 30px;
 }
 
+.stats-row .title{
+  font-size: 20px;
+  font-weight: 600;
+  color:white;
+}
+
+.stats-row .timer{
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+  color:white;
+}
+
+.stats-row .timer .time-txt{
+    font-weight: 500;
+    font-size: 20px;
+    user-select: none;
+  color:white;
+}
+
+.stats-row .timer .time-sec{
+    font-size: 20px;
+    font-weight: 500;
+    height: 30px;
+    width: 40px;
+    color: white;
+    border-radius: 6px;
+    line-height: 30px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    /* border: 1px solid #0080ff; */
+    user-select: none;
+    margin: 4px 6px;
+}
+
 .correct {
   background-color: rgb(10, 200, 10);
   color: white;
