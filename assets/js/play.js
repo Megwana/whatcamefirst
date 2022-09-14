@@ -16,10 +16,17 @@ const returnHome = resultContainer.querySelector(".buttons .quit");
 
 //the action of clicking the Start Button startButton.onclick = ()=> {quizContainer.classList.add("activeQuiz")
 
+// Start button click action
 startButton.onclick = ()=>{
     quizContainer.classList.add("activeInfo"); //show info box
     startButton.classList.add("hideme");
 };
+
+// Exit button click action
+exitButton.onclick = ()=>{
+    introContainer.classList.remove("activeInfo"); //hide info box
+    startButton.classList.remove("hideme");
+  }
 
 //the action of clicking the Next Button
 
