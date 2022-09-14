@@ -39,8 +39,8 @@ contButton.onclick = ()=>{
 }
 
 let timeValue =  20;
-let que_count = 0;
-let que_numb = 1;
+let queCount = 0;
+let queNumb = 1;
 let userScore = 0;
 let counter;
 let counterLine;
@@ -54,12 +54,12 @@ restartQuiz.onclick = ()=>{
 resultContainer.classList.remove("activeResult"); 
 //hide results container
 timeValue = 20; 
-que_count = 0;
-que_numb = 1;
+queCount = 0;
+queNumb = 1;
 userScore = 0;
 widthValue = 0;
-setQuestions(que_count);
-questionCounter(que_numb);
+setQuestions(queCount);
+questionCounter(queNumb);
 clearInterval(counter);
 clearInterval(counterLine);
 startTime(timeValue);
@@ -75,11 +75,11 @@ returnHome.onclick = ()=>{
 
 // Next button click action
 nextButton.onclick = ()=>{
-    if(que_count < questions.length - 1){
-        que_count++;
-        que_numb++;
-        setQuestions(que_count);
-        questionCounter(que_numb);
+    if(queCount < questions.length - 1){
+        queCount++;
+        queNumb++;
+        setQuestions(queCount);
+        questionCounter(queNumb);
         clearInterval(counter);
         clearInterval(counterLine);
         startTimer(timeValue);
@@ -111,8 +111,38 @@ function setQuestions(index) {
     }
 }
 
+// New div tags for tick and cross icons 
 let iconTickTag = '<div class="icon tick"><i class="fa-solid fa-square-check"></i></div>';
 let iconCrossTag = '<div class="icon cross"><i class="fa-solid fa-square-xmark"></i></div>';
+
+// Option click function for when the user has selected their answer
+function optionClicked(answer) {
+    clearInterval(counter);
+    clearInterval(counterLine);
+    let userAns = answer.textContent; 
+    let correcAnswer = questions[queCount].answer;
+    const allOptions = options.children.length;
+    if(userAns == correcAnswer){
+        userScore += 20;
+        answer.classList.add("correct");
+        answer.insertAdjacentHTML("beforeend", iconTickTag); 
+        console.log("Correct Answer");
+        console.log("Your correct answers = " + userScore);}
+        else{
+            answer.classList.add("incorrect");
+            answer.insertAdjacentHTML("beforeend", iconCrossTag); 
+            console.log("Incorrect Answer");
+            for(i=0; i < allOptions; i++){
+                if(options.children[i].textContent == correcAnswer){
+                    options.children[i].setAttribute("class", "option correct");
+                    options.children[i].insertAdjacentHTML("beforeend", iconTickTag);
+                    console.log("Auto selected correct answer.");
+        }}}
+        for(i=0; i < allOptions; i++){
+            options.children[i].classList.add("disabled");
+        }
+        nextButton.classList.add("show");}
+        
 
 // All Quiz questions 
 let questions = [
