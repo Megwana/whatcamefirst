@@ -92,6 +92,19 @@
     margin: 4px 6px;
 }
 
+/* time decreasing line styling*/
+.stats-row .time-decline{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 8px;
+  background: #8aebff;
+}
+
+.time-decline {
+width: 600px;
+}
+
 .correct {
   background-color: rgb(10, 200, 10);
   color: white;
