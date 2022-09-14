@@ -347,6 +347,36 @@ width: 600px;
   color: white;
 }
 
+.resultContainer .scoreText span{
+  display: flex;
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+.resultContainer .scoreText span p{
+    padding: 0 8px;
+    font-weight: 500;
+  color: white;
+}
+.resultContainer.buttons{
+    display: flex;
+    margin: 24px 0;
+  background: white;
+}
+.resultContainer .buttons button{
+  height: 50px;
+  margin: 0 12px;
+  border: 1px solid #0b2a4c;
+  border-radius: 5px;
+  padding: 0 22px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
