@@ -222,6 +222,11 @@ width: 600px;
   transition: all 0.2s ease-in-out;
 }
 
+.next-div button:hover{
+  background: #ecfcfe;
+  text-decoration: underline;
+}
+
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
 
