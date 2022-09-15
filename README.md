@@ -67,12 +67,14 @@ The colour scheme I wanted to have neutral elements such as black and white part
 
 Google Fonts: 
 
-- Header = 'Dancing Script', cursive
-- Main body font = 'Josefin Sans', sans-serif
+- The Header I wanted to be more illustrative and more of a delicate handwriting look to appear more historical. Therefore 'Dancing Script' was used.
+
+- The main body font, I wanted to be slightly more formal and easy to read questions and options in the quiz. I felt handwriting text would prove challenging for people with reading/ visual impairments. Therefore, I selected 'Josefin Sans'.
 
 ### Imagery
 
-- Pexels & Shutterstock
+- For the website background, I wanted to have an ancient background. However, I wanted this to be more fun and educational appearing rather than a real life photo. 
+The cartoon image of the pyramids felt perfect for a bright background and suiting the history theme well. Pexels & Shutterstock
 
 ### Accessibility
 
@@ -85,10 +87,25 @@ Header title always leads you back to the home page
 
 - Temple Icon - Top Left
 The Temple icon appears as a logo and also a drop down menu. 
-
-- 
+- Welcome Container
+- Javascript Modal containing Instructions
+- Start Quiz Button 
+- Introduction Container
+- Continue and Exit Button 
+- Questions Counter
+- Time counter and Time Line that inceases
+- hover effect on option
+- Correct and Incorrect option
+- Next Button Appears
+- Results Container
+- Javascript Contact Form
 
 ### Future Features
+
+- More Questions 
+- Add multiple difficulties 
+
+### Why Certain Features Were Not Included
 
 ## 4. Technologies Applied
 
