@@ -22,12 +22,11 @@ A quiz is classed a game or even a sport for the mind. People either individuall
 
 ### Goals 
 
-- New Vistitors to the site: For new visitors, I have the following goals depending on different factors. 
+- New Vistitors to the site: 
 
+For new visitors, I have the following goals depending on different factors. 
 If the visitors already has a good sense of general knowledge then I want this to be a fun experience for them as a quiz game.
-
 If the visitor does not know much about history, then I want the user to have learnt and gained knowledge after completing the quiz. 
-
 As the user is a new visitor, I want them to find the website easy to navigate. I want them to find the rules easy to understand. In addition, I would like them to find the website visually clear to read and appealing design wise. 
 
 - Regular Visitors to the site: 
@@ -37,9 +36,7 @@ For regular visitors, I want them to keep coming back. Therefore as time transpi
 - All visitors:
 
 I want all visitors to have had a fun and interactive experience whilst completing the quiz. 
-
 I want them to find the site easy to navigate.
-
 
 ## 2. User Design Experience (UX)
 

@@ -62,7 +62,7 @@ nav {
 
 /* Add a grey background color to dropdown links on hover */
 .menu a:hover {
-  background: rgb(153, 216, 255);
+  background: #8aebff;
 }
 
 /* Show the dropdown menu on hover */
@@ -131,7 +131,7 @@ nav {
 .index-btn {
   margin: 10px;
   padding: 10px 18px;
-  background: #9AD9FF;
+  background: #8aebff;
   border-radius: 6px;
   border: none;
   width: 250px;

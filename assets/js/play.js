@@ -153,7 +153,7 @@ function showResult(){
     resultContainer.classList.add("activeResult"); 
     const scoreText = resultContainer.querySelector(".scoreText");
     if (userScore > 140){ 
-        let scoreTag = '<span> Amazing, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
+        let scoreTag = '<span> Amazing, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p>.</span>';
         scoreText.innerHTML = scoreTag;
     }
     else if(userScore > 100){ // if user scored more than 1

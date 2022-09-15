@@ -395,6 +395,7 @@ body{
   text-align: center;
     margin: 24px 0;
   background: white;
+  
 }
 
 .resultContainer .buttons button{
@@ -416,6 +417,8 @@ body{
 
 .buttons {
   color: #616161;
+  display: flex;
+  justify-content: center;
 }
 .restart-button, .home-button {
     color: #5c5e60;
