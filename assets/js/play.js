@@ -254,7 +254,7 @@ let questions = [
   },
     {
     numb: 4,
-    question: "Which of the following came first?",
+    question: "Which Sport came first?",
     answer: "Bowling",
     options: [
       "Bowling",
@@ -265,7 +265,7 @@ let questions = [
   },
     {
     numb: 5,
-    question: "Which of the following came first?",
+    question: "Which Revolution came first?",
     answer: "Haitian Revolution",
     options:[
       "Haitian Revolution",
@@ -309,7 +309,7 @@ let questions = [
   },
       {
     numb: 9,
-    question: "Which Greek Philosopher was born first?",
+    question: "Which Philosopher was born first?",
     answer: "Plato",
     options:[
       "Socrates",
@@ -320,7 +320,7 @@ let questions = [
   },
       {
     numb: 10,
-    question: "What William became Prime Minister first?",
+    question: "Who was Prime Minister first?",
     answer: "William Cavendish",
     options:[
       "William Grenville",
