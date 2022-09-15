@@ -375,6 +375,8 @@ body{
 }
 .resultContainer .scoreText span{
   display: flex;
+  justify-content: center;
+  text-align: center;
   margin: 8px 0;
   font-size: 20px;
   font-weight: 500;
@@ -384,28 +386,35 @@ body{
     padding: 0 8px;
     font-weight: 500;
   color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .resultContainer.buttons{
-    display: flex;
+  display: flex;
+  justify-content: center;
+  text-align: center;
     margin: 24px 0;
   background: white;
 }
+
 .resultContainer .buttons button{
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   text-align: center;
   height: 50px;
-  margin: 0 12px;
+  width: 140px;
+  margin: 0 10px;
   border: 1px solid #0b2a4c;
   border-radius: 5px;
-  padding: 0 22px;
+  padding: 0 10px;
   outline: none;
   font-size: 20px;
-  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .buttons {
   color: #616161;
 }
