@@ -18,7 +18,13 @@ To view the deployed site, click this link: [What Came First](WEBSITE-LINK)
 
 ### Introduction & Premise 
 
-A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. (https://en.wikipedia.org/wiki/Quiz)
+A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. (https://en.wikipedia.org/wiki/Quiz).
+
+What Came First is a website designed for visitors to learn and test their knowledge on general history. The goal for the user is to play the quiz game and try and guess what historical event, place or person came first from the selection of options. 
+
+The Website is responsive, this allows site visitors to interact with the platform on a variety of devices. This may range from, desktops, laptops, tablets and mobiles. 
+
+Please see above a mockup of the website on a range of devices. 
 
 ### Goals 
 
@@ -41,6 +47,13 @@ I want them to find the site easy to navigate.
 ## 2. User Design Experience (UX)
 
 ### Conceptualisation
+
+The original concept for this website is based off of the board game (link referenced below):
+https://www.amazon.co.uk/First-Board-Picking-Betting-Big/dp/B07VGLK2BY
+
+The website is however, a quiz game with its prime goal to be that people may have learnt something new after participating.
+
+Whereas the board game has a more competitive element and a betting structure.
 
 ### Wireframes
 
