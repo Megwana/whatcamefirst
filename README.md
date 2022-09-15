@@ -48,9 +48,14 @@ I want them to find the site easy to navigate.
 
 ### Colour Scheme
 
+The colour scheme I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and ;incorrect' answers. In addition to this, a bright blue to be neutral between the red and green when trying to select an option. The blue also nicely connects on theme with the historic illustration of the Egyptain Pyramids in the background.
+
 ### Typography
 
-- Google Fonts
+Google Fonts: 
+
+- Header = 'Dancing Script', cursive
+- Main body font = 'Josefin Sans', sans-serif
 
 ### Imagery
 
@@ -62,9 +67,24 @@ I want them to find the site easy to navigate.
 
 ### Existing Features
 
+- Header Title 
+Header title always leads you back to the home page
+
+- Temple Icon - Top Left
+The Temple icon appears as a logo and also a drop down menu. 
+
+- 
+
 ### Future Features
 
 ## 4. Technologies Applied
+
+HTML 
+CSS
+Javascript
+FontAwesome
+GoogleIcons
+GoogleFonts
 
 ## 5. Testing
 
@@ -79,7 +99,8 @@ I want them to find the site easy to navigate.
 ## 7. Credits
 
 Links Used:
-- https://imagecolorpicker.com/
 - https://fontawesome.com/
+- google icons - favicon
 - <a href="https://www.flaticon.com/free-icons/greek" title="greek icons">temple icon created by Smashicons - Flaticon</a>
 - Brian Design https://www.youtube.com/watch?v=f4fB9Xg2JEY
+- Coding Nepal https://www.youtube.com/watch?v=WUBhpSRS_fk

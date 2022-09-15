@@ -1,5 +1,5 @@
-/* imported url for Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -421,8 +421,8 @@ body{
   justify-content: center;
 }
 .restart-button, .home-button {
-    color: #5c5e60;
-    background: #fff;
+    color: #616161;
+    background: #ffffff;
 }
 
 .buttons button.restart-button:hover,

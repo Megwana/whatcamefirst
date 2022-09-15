@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans&display=swap');
 
 * {
   font-family: 'Josefin Sans', sans-serif;
@@ -79,6 +78,7 @@ nav {
 .landing-page-title h1 {
   text-align: center;
   font-size: 50px;
+  font-family: 'Dancing Script', cursive;
   margin: auto;
   width: 40rem;
 }
@@ -292,7 +292,7 @@ footer {
 @media only screen and (min-width: 2100px) {
   .landing-page-title h1 {
     font-size: 150px;
-    width: 70rem;
+    width: 90rem;
 }
 .landmark-logo, .material-symbols-outlined {
   font-size: 100px;
