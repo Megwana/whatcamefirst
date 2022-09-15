@@ -85,6 +85,7 @@ Javascript
 FontAwesome
 GoogleIcons
 GoogleFonts
+SmtpJS
 
 ## 5. Testing
 
@@ -104,3 +105,4 @@ Links Used:
 - <a href="https://www.flaticon.com/free-icons/greek" title="greek icons">temple icon created by Smashicons - Flaticon</a>
 - Brian Design https://www.youtube.com/watch?v=f4fB9Xg2JEY
 - Coding Nepal https://www.youtube.com/watch?v=WUBhpSRS_fk
+- https://smtpjs.com/
