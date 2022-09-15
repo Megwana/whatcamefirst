@@ -224,7 +224,14 @@ body{
 .options{
   padding-top: 16px;
   display: block;
-  color:white;
+  color: white;
+  width: 500px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 .options .option{
@@ -379,6 +386,10 @@ body{
   background: white;
 }
 .resultContainer .buttons button{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
   height: 50px;
   margin: 0 12px;
   border: 1px solid #0b2a4c;
