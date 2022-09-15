@@ -1,3 +1,4 @@
+// Below function is from SmtpJS.com and credited in the ReadMe file
 function sendEmail() {
     Email.send({
     Host : "smtp.outlook.com",
