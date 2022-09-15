@@ -1,13 +1,14 @@
 /* imported url for Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Patrick+Hand&display=swap');
-
-* {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
-  list-style: none;
 }
 
-body {
+body{
   background: url(/assets/images/pyramid.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,8 +19,7 @@ body {
   margin: 0;
 }
 
-/* Start Button styling */
-.startButton button {
+.start-button button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,41 +27,33 @@ body {
   background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 10px;
-  cursor:pointer;
+  cursor: pointer;
   width: 250px;
   height: 100px;
   font-size: 40px;
   padding: 10px;
-
 }
-.startButton button.hideMe {
+
+.start-button button.hideMe {
   display: none;
 }
-.startButton button:hover {
-  background-color: #8aebff;
-  transition: 0.2;
-}
 
-/* Introductory Container styling */
-
-.introContainer, 
-.quizContainer, 
-.resultContainer{
+.introContainer, .quizContainer, .resultContainer{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.734);
-  border-radius: 5px;
-  opacity: 0;
+  border-radius: 10px;
+  opacity: 1;
   z-index: 5;
   color: white;
   width: 600px;
   height: 500px;
 }
 
-.intro-container.activeIntro, 
-.quiz-container.activeQuiz, 
+.introContainer.activeIntro,
+.quizContainer.activeQuiz,
 .resultContainer.activeResult{
   opacity: 1;
   z-index: 5;
@@ -69,19 +61,32 @@ body {
   transform: translate(-50%, -50%) scale(1);
   color: white;
 }
+/* information container with information on the quiz */
+
+.introContainer{
+    width: 550px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+  background-color: rgba(0, 0, 0, 0.734);
+  color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+  color: white;
+}
 
 .introContainer .intro-title h2{
-  height: 70px;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  border-radius: 5px 5px 0 0;
-  font-size: 40px;
-  font-weight: 600;
-color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    font-size: 40px;
+    font-weight: 600;
+  color: white;
 }
 
 .guidance-list ul li{
@@ -101,30 +106,30 @@ color: white;
 }
 
 .introContainer .buttons{
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .introContainer .buttons button{
-  margin: 0 4px;
-  height: 40px;
-  width: 100px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  border: 1px solid #000000;
-  transition: all 0.2s ease;
+    margin: 0 4px;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    transition: all 0.2s ease;
 }
 
-/* Quiz Container */
+/* Quiz container that holds the stats, questions, options and next button to move to a new question */
 .quizContainer{
   width: 600px;
   color: #fff;
@@ -136,7 +141,6 @@ color: white;
   transition: all 0.2s ease;
 }
 
-/* stats-row container showing questions counter and time counter*/
 .statsRow {
   display: flex;
   justify-content: space-between;
@@ -147,31 +151,13 @@ color: white;
   height: 70px;
   padding: 0 30px;
 }
+
 .statsRow .title{
   font-size: 20px;
   font-weight: 600;
   color:white;
 }
 
-/* Question counter styling */
-.statsRow .maximumQuestions span{
-  display: flex;
-  user-select: none;
-  color: white;
-  font-size: 20px;
-}
-.statsRow .maximumQuestions span p{
-  font-weight: 500;
-  font-size: 20px;
-  padding: 0 4px;
-  color: white;
-}
-.statsRow .maximumQuestions span p:first-child{
-  padding-left: 8px;
-  font-size: 20px;
-}
-
-/* time counter styling */
 .statsRow .timer{
     color: white;
     height: 50px;
@@ -182,12 +168,14 @@ color: white;
     width: 156px;
   color:white;
 }
+
 .statsRow .timer .timeText{
     font-weight: 500;
     font-size: 20px;
     user-select: none;
   color:white;
 }
+
 .statsRow .timer .timeSeconds{
     font-size: 20px;
     font-weight: 500;
@@ -204,11 +192,25 @@ color: white;
     margin: 4px 6px;
 }
 
-/* Quiz Contents styling */
+/* time decreasing line styling*/
+.statsRow .timeDecline{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 8px;
+    background: #8aebff;
+}
+
+.timeDecline {
+  width: 600px;
+}
+
+/*Quiz Contents*/
 .quizContents {
   padding: 10px 20px 0;
   color: white;
 }
+
 .questionText span{
   font-size: 30px;
   font-weight: 600;
@@ -218,137 +220,146 @@ color: white;
   align-items: center;
   justify-content: center;
 }
+
 .options{
   padding-top: 16px;
   display: block;
   color:white;
 }
+
 .quizContents .options .option{
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  padding: 8px 14px;
-  font-size: 20px;
-  margin-bottom: 14px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 20px;
+    margin-bottom: 14px;
   height: 50px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-}
-.options .option:hover{
-  color: #000000;
-  background: #8aebff;
-}
-.options .option.correct{
-  color: #000000;
-  background: #10e040;
-  border: 1px solid #000000;
-}
-.options .option.incorrect{
-  color: #fafafa;
-  background: #e92539;
-  border: 1px solid #000000;
-}
-.options .option.disabled{
-  pointer-events: none;
-}
-.icon{
-  height: 30px;
-  width: 30px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 30px;
-  pointer-events: none;
-  transition: all 0.2s ease-in-out;
-  line-height: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
 
-/*Next Button styling */
-.nextDiv {
-  height: 60px;
-  padding: 0 30px;
+.options .option:hover{
+    color: #000000;
+    background: #8aebff;
+}
+
+.options .option.correct{
+    color: #000000;
+    background: #10e040;
+    border: 1px solid #000000;
+}
+
+.options .option.incorrect{
+    color: #fafafa;
+    background: #e92539;
+    border: 1px solid #000000;
+}
+
+.options .option.disabled{
+    pointer-events: none;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+    line-height: 20px;
+}
+
+.statsRow .maximum-questions span{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  user-select: none;
+  color: white;
+  font-size: 20px;
+}
+
+.statsRow .maximum-questions span p{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 4px;
+  color: white;
+}
+
+.statsRow .maximum-questions span p:first-child{
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+/*Next Button div */
+.nextDiv {
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nextDiv button{
-  height: 40px;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    color: #000000;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
   justify-content: center;
-  padding: 0 12px;
-  font-size: 18px;
-  font-weight: 400;
-  cursor: pointer;
-  outline: none;
-  color: #000000;
-  border-radius: 5px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  line-height: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.98);
-  transition: all 0.2s ease-in-out;
 }
 .nextDiv button:hover{
   background: #ecfcfe;
   text-decoration: underline;
 }
 .nextDiv button.show{
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
 }
 
-/* time decreasing line styling */
-.statsRow .timeDecline{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 8px;
-  background: #8aebff;
-}
-.timeDecline {
-width: 600px;
-}
-
-/* Results container styling */
+/* Results container, letting the user know how many points they achieved */
 .resultContainer{
-  background-color: rgba(0, 0, 0, 0.734);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 28px;
-  width: 600px;
-  transition: all 0.2s ease-in-out;
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
-  pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.734);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 28px;
+    width: 600px;
+    transition: all 0.2s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    pointer-events: none;
 }
-
-/* Results text */
 .resultContainer .resultText h2 {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding: 20px;
-  font-size: 40px;
-  color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
 }
-
 .resultContainer .resultText p{
   font-size: 20px;
   font-weight: 500;
   color: white;
 }
-
-/* Results points */
 .resultContainer .scoreText span{
   display: flex;
   margin: 8px 0;
@@ -378,113 +389,17 @@ width: 600px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-
 .buttons {
   color: #616161;
 }
-.restart, .home {
+.restart-button, .home-button {
     color: #5c5e60;
     background: #fff;
 }
 
-.buttons button.restart:hover,
-.buttons button.home:hover {
+.buttons button.restart-button:hover,
+.buttons button.home-button:hover {
   background: #ecfcfe;
   color: black;
   text-decoration: underline;
-}
-
-/* Extra small devices (phones, 450px and down) */
-@media only screen and (max-width: 450px) {
-
-.logo-dropdown, .landing-page-title {
-  line-height: 24px;
-}
-
-.logo-dropdown {
-  float: left;
-  margin-left: 20px;
-}
-
-.dropbtn i {
-  font-size: 20px;
-  float: left;
-}
-
-  .quiz-container {
-    width: 280px;
-    margin: 50px auto
-  }
-
-  .question-text h2 {
-    margin: 2px;
-    font-size: 26px;
-  }
-
-  .options {
-    font-size: 18px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 500px and up) */
-@media only screen and (min-width: 450px) {
-  .quiz-container {
-    width: 400px;
-  }
-}
-
-/* Medium devices (landscape tablets, 700px and up) */
-@media only screen and (min-width: 700px) {
-  .quiz-container {
-    width: 500px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .quiz-container {
-    width: 700px;
-    font-size: 20px;
-}
-
-.quiz-container h2 {
-    text-align: center;
-    font-size: 34px;
-  }
-
-}
-
-/* Extra Extra large devices (large laptops and desktops, 2100px and up) */
-@media only screen and (min-width: 2100px) {
-  .landing-page-title h1 {
-    font-size: 150px;
-    width: 100rem;
-}
-.landmark-logo, .material-symbols-outlined {
-  font-size: 100px;
-}
-
-.landmark-logo {
-  margin-left: 70px;
-}
-
-#quiz-container {
-  margin: 400px auto;
-}
-
-#question-title h2 {
-  font-size: 50px;
-}
-
-#quiz-container p, li {
-  font-size: 26px;
-}
-
-
-
-
 }

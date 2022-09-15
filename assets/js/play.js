@@ -17,13 +17,14 @@ const returnHome = resultContainer.querySelector(".buttons .home");
 // Start button click action
 startButton.onclick = ()=>{
     introContainer.classList.add("activeIntro"); //show info box
-    startButton.classList.add("hideme");
+    startButton.classList.add("hideMe");
 };
 
 //Exit button click action
-exitButton.onclick = ()=> {
+exitButton.onclick = ()=>{
     introContainer.classList.remove("activeIntro"); //hide info box
-    startButton.classList.remove("hideMe");}
+    startButton.classList.remove("hideMe");
+  };
 
 // Continue button click action
 contButton.onclick = ()=>{
@@ -33,7 +34,7 @@ contButton.onclick = ()=>{
     questionCounter(1); //passing 1 parameter to questionCounter
     startTimer(20); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
-}
+};
 
 let timeValue =  20;
 let queCount = 0;
@@ -46,11 +47,9 @@ let maxPoints = 200;
 
 // Restart Quiz button click action
 restartQuiz.onclick = ()=>{
-    quizContainer.classList.add("activeQuiz"); 
-//show quiz container
-resultContainer.classList.remove("activeResult"); 
+    quizContainer.classList.add("activeQuiz");
+    resultContainer.classList.remove("activeResult"); 
 
-//hide results container
 timeValue = 20; 
 queCount = 0;
 queNumb = 1;
@@ -64,12 +63,12 @@ startTime(timeValue);
 startTimerLine(widthValue);
 timeText.textContent = "Time Left";
 nextButton.classList.remove("show");
-}
+};
 
 // Home button will return the user back to the landing page click action
 returnHome.onclick = ()=>{
     history.back(-1);
-}
+};
 
 // Next button click action
 nextButton.onclick = ()=>{
@@ -90,10 +89,9 @@ nextButton.onclick = ()=>{
         clearInterval(counterLine);
         showResult();
     }
-}
+};
 
 // Setting questions and answer options from array
-
 function setQuestions(index) {
     let questionText = document.querySelector("questionText");
     let questionTag = '<span>' + questions[index].question + '</span>';
@@ -107,7 +105,7 @@ function setQuestions(index) {
     for(i=0; i < option.length; i++) {
         option[i].setAttribute("onclick", "optionClicked(this)");
     }
-}
+};
 
 // New div tags for tick and cross icons 
 let iconTickTag = '<div class="icon tick"><i class="fa-solid fa-square-check"></i></div>';
@@ -139,7 +137,8 @@ function optionClicked(answer) {
         for(i=0; i < allOptions; i++){
             options.children[i].classList.add("disabled");
         }
-        nextButton.classList.add("show");}
+        nextButton.classList.add("show")
+};
 
 // showResult function
 function showResult(){
@@ -159,7 +158,7 @@ function showResult(){
         let scoreTag = '<span> Nice try, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
-}
+};
 
 // startTimer function
 function startTimer(time){
@@ -189,7 +188,7 @@ function startTimer(time){
             nextButton.classList.add("show"); 
         }
     }
-}
+};
 
 // startTimerLine function
 function startTimerLine(time){
@@ -201,13 +200,13 @@ function startTimerLine(time){
             clearInterval(counterLine); 
         }
     }
-}
+};
 
 // questionCounter function
 function questionCounter(index){
     let totalQueCounTag = '<span>Question:<p>'+ index +'</p> of <p>'+ questions.length +'</p></span>';
     leftQuCounter.innerHTML = totalQueCounTag; 
-}
+};
 
 // All Quiz questions 
 let questions = [
@@ -291,10 +290,10 @@ let questions = [
       {
     numb: 8,
     question: "Which of the following came first? ",
-    answer: "Hawaii’s admission into the US",
+    answer: "Hawaii admission into the US",
     options:[
-      "Hawaii’s admission into the US",
-      "Alaska’s admission into the US",
+      "Hawaii admission into the US",
+      "Alaska admission into the US",
       "Isla Mujeres' admission into the US",
       "Toronto's admission into the US",
     ]
@@ -433,4 +432,3 @@ let questions = [
     ]
   },
  ];
-
