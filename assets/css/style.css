@@ -248,7 +248,7 @@ footer p {
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
   .landing-page-title h1 {
-    font-size: 30px;
+    font-size: 20px;
     width: 250px;
     margin-bottom: 20px;
   }
@@ -256,7 +256,7 @@ footer p {
   font-size: 30px;
   }
   .welcome-container {
-    width: 280px;
+    width: 270px;
   }
   .welcome-container h2 {
     margin: 2px;
@@ -264,7 +264,13 @@ footer p {
   .welcome-list {
     padding: 2px;
   }
-}
+
+  .modal-close i {
+    font-size: 20px;
+  }
+  .logo-dropdown .dropbtn {
+    font-size: 20px;
+  }
 
 /* Small devices (portrait tablets and large phones, 500px and up) */
 @media only screen and (min-width: 450px) {
@@ -335,5 +341,29 @@ footer p {
 .index-btn {
   width: 500px;
   height: 100px;
+}
+
+.modal {
+  width: 1300px;
+  height: 800px;
+  padding: 30px;
+}
+
+.modal h3 {
+  font-size: 50px;
+}
+
+.modal ol {
+  margin: 20px;
+}
+
+.modal li {
+  padding: 30px 20px;
+  line-height: 48px;
+}
+
+.modal .fa-regular fa-circle-xmark {
+  font-size: 50px;
+}
 }
 }
