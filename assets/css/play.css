@@ -434,3 +434,38 @@ body{
   color: black;
   text-decoration: underline;
 }
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media only screen and (min-width: 450px) {
+  .welcome-container {
+    width: 400px;
+  }
+}
+
+/* Medium devices (landscape tablets, 700px and up) */
+@media only screen and (min-width: 700px) {
+  .welcome-container {
+    width: 500px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Extra Extra large devices (large laptops and desktops, 2100px and up) */
+@media only screen and (min-width: 2100px) {
+  .landing-page-title h1 {
+    font-size: 150px;
+    width: 90rem;
+}
+.landmark-logo, .material-symbols-outlined {
+  font-size: 100px;
+}
+
+.landmark-logo {
+  margin-left: 70px;
+}
+}
