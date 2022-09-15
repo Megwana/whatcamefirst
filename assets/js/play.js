@@ -16,7 +16,7 @@ const returnHome = resultContainer.querySelector(".buttons .home-button");
 
 // Start button click action
 startButton.onclick = ()=>{
-  introContainer.classList.add("activeIntro"); //show info box
+  introContainer.classList.add("activeIntro"); 
   startButton.classList.add("hideMe");
 }
 
@@ -28,8 +28,8 @@ exitButton.onclick = ()=>{
 
 // continue button click action
 contButton.onclick = ()=>{
-    introContainer.classList.remove("activeIntro"); //hide info box
-    quizContainer.classList.add("activeQuiz"); //show quiz box
+    introContainer.classList.remove("activeIntro"); 
+    quizContainer.classList.add("activeQuiz"); 
     setQuestions(0); 
     questionCounter(1); 
     startTimer(20); 
@@ -71,25 +71,25 @@ returnHome.onclick = ()=>{
 
 // Next button clicked
 nextButton.onclick = ()=>{
-    if(queCount < questions.length - 1){ //if question count is less than total question length
-        queCount++; //increment the que_count value
-        queNumb++; //increment the que_numb value
-        setQuestions(queCount); //calling setQestions function
-        questionCounter(queNumb); //passing que_numb value to questionCounter
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        startTimer(timeValue); //calling startTimer function
-        startTimerLine(widthValue); //calling startTimerLine function
-        timeText.textContent = "Time Left:"; //change the timeText to Time Left
-        nextButton.classList.remove("show"); //hide the next button
+    if(queCount < questions.length - 1){ 
+        queCount++;
+        queNumb++; 
+        setQuestions(queCount);
+        questionCounter(queNumb); 
+        clearInterval(counter); 
+        clearInterval(counterLine);
+        startTimer(timeValue);
+        startTimerLine(widthValue); 
+        timeText.textContent = "Time Left:";
+        nextButton.classList.remove("show"); 
     }else{
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        showResult(); //calling showResult function
+        clearInterval(counter);
+        clearInterval(counterLine); 
+        showResult(); 
     }
 }
 
-// getting questions and options from array
+//setQuestions function
 function setQuestions(index){
   let questionText = document.querySelector(".questionText");
   let que_tag = '<span>'+ questions[index].question +'</span>';
@@ -104,7 +104,6 @@ function setQuestions(index){
     
   const option = options.querySelectorAll(".option");
   
-  // set onclick attribute to all available options
   for(i=0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionClicked(this)");
     }
@@ -142,9 +141,9 @@ function optionClicked(answer){
         }
     }
     for(i=0; i < allOptions; i++){
-        options.children[i].classList.add("disabled"); //once user select an option then disabled all options
+        options.children[i].classList.add("disabled"); 
     }
-    nextButton.classList.add("show"); //show the next button if user selected any option
+    nextButton.classList.add("show"); 
 }
 
 // showResult function
