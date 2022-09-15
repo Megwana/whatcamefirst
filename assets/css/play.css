@@ -60,11 +60,13 @@ body{
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
   color: white;
+  margin: 40px auto;
 }
 /* information container with information on the quiz */
 
 .introContainer{
     width: 550px;
+    height: 640px;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
   background-color: rgba(0, 0, 0, 0.734);
@@ -78,6 +80,7 @@ body{
 .introContainer .intro-title h2{
     height: 70px;
     width: 100%;
+    margin: 20px 0;
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;

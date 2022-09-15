@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-  margin: 40px 0 0;
+  margin: 40px 0;
   z-index: 10;
 }
 .logo-dropdown {
@@ -219,7 +219,7 @@ nav {
 footer {
   position: fixed;
   bottom: 0;
-  z-index: 0;
+  z-index: 6;
   background-color: white;
   opacity: 0.9;
   min-width: 100%;
@@ -235,6 +235,7 @@ footer {
   .landing-page-title h1 {
     font-size: 30px;
     width: 250px;
+    margin-bottom: 20px;
   }
   .landmark-logo, .material-symbols-outlined {
   font-size: 30px;
