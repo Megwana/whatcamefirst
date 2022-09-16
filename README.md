@@ -124,6 +124,8 @@ SmtpJS
 ### Lighthouse
 
 ### Bugs
+Live site absolute and relative URL 
+https://megwana.github.io/whatcamefirst/
 
 ## 6. Deployment
 
