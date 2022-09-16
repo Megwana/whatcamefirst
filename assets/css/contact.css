@@ -79,3 +79,141 @@ form button:hover {
     text-decoration: underline;
     transition: 0.2s ease-in-out;
 }
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 450px) {
+  form h2 {
+    font-size: 18px;
+  }
+
+  form input, form textarea {
+    font-size: 12px;
+  }
+
+  form button {
+    width: 120px;
+    font-size: 14px;
+  }
+}
+  
+  /* Small devices (portrait tablets and large phones, 500px and up) */
+  @media only screen and (min-width: 450px) {
+    body {
+        position: relative;
+        min-height: 120vh;
+      }
+
+      .landing-page-title h1 {
+        font-size: 20px;
+        width: 250px;
+        margin-bottom: 20px;
+      }
+      .logo-dropdown .dropbtn {
+      font-size: 20px;
+      }
+    form {
+        width: 300px;
+        height: 300px;
+        font-size: 10px;
+    }
+
+    form h2 {
+        font-size: 16px;
+    }
+
+    form input, form textarea {
+        margin: 2px 20px;
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    form button {
+        width: 100px;
+        font-size: 10px;
+        height: 30px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 700px and up) */
+  @media only screen and (min-width: 700px) {
+    .landing-page-title h1 {
+        font-size: 30px;
+        width: 30rem;
+    }
+
+    .logo-dropdown .dropbtn{
+        font-size: 30px;
+
+    form {
+        min-width: 400px;
+        height: 300px;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    form input, form textarea {
+        font-size: 12px;
+        padding: 4px;
+    }
+    form button {
+        height: 40px;
+        font-size: 14px;
+        width: 130px;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    form {
+        min-width: 500px;
+        height: 500px;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    form input, form textarea {
+        font-size: 18px;
+        padding: 8px;
+        margin: 10px;
+    }
+    form button {
+        height: 60px;
+        font-size: 20px;
+        width: 150px;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {}
+  
+  /* Extra Extra large devices (large laptops and desktops, 2100px and up) */
+  @media only screen and (min-width: 2100px) {
+    .landing-page-title h1 {
+        font-size: 80px;
+        width: 90rem;
+    }
+
+    form {
+        min-width: 900px;
+        height: 700px;
+    }
+
+    form h2 {
+        font-size: 50px;
+    }
+
+    form input, form textarea {
+        font-size: 24px;
+        padding: 20px;
+    }
+    form button {
+        height: 60px;
+        font-size: 26px;
+        width: 250px;
+    }
+  }
+

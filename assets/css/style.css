@@ -286,6 +286,7 @@ footer p {
   }
   body {
     position: fixed;
+    min-height: 120vh;
   }
 }
 
