@@ -217,6 +217,10 @@ nav {
     align-content: center;
 }
 
+.logo-dropdown i:hover {
+  transition: all 1.5s;
+  transform: rotateY(360deg);
+}
 .modal-close i:hover {
   transition: all 1.5s;
   transform: rotateY(360deg);
