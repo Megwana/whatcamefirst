@@ -57,7 +57,18 @@ Whereas the board game has a more competitive element and a betting structure.
 
 ### Wireframes
 
-- Figma
+As the quiz isn't just general trivia and is specifically on various historical people, places and events that occured: I wanted the insert a background image that embodies ancient history. For me, an image of the Pyramids was perfect to capture this. In addition, I wanted it display also a fun lightness to it. Therefore, a cartoon of the Pyramids I thought aided this well. 
+
+I created Wireframes for mobile, tablet and desktop devices using Figma. 
+
+![Home Page](./assets/images/wireframes/HomePageWireFrame.png)
+![Instructions Modal](./assets/images/wireframes/InstructionsModalWireFrame.png)
+![Start Button](./assets/images/wireframes/startButtonWireFrame.png)
+![Introduction Page (points and timer rules)](./assets/images/wireframes/PointsTimeRulesWireFrame.png)
+![Quiz Container](./assets/images/wireframes/QuestionContainerWireFrame.png)
+![Results Container](./assets/images/wireframes/ResultsWireFrame.png)
+![Contact Page](./assets/images/wireframes/ContactWireFrame.png)
+
 
 ### Colour Scheme
 
