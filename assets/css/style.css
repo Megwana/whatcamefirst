@@ -284,6 +284,9 @@ footer p {
   .welcome-container {
     width: 400px;
   }
+  body {
+    position: fixed;
+  }
 }
 
 /* Medium devices (landscape tablets, 700px and up) */

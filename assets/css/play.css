@@ -440,7 +440,7 @@ body{
 }
 
 @media only screen and (ax-width: 280px) {
-  .quizContainer.activeQuiz {
+  .quizContainer, .introContainerm .resultContainer {
   transform: translate(-50%, -70%) scale(0.4);
 }
 }
