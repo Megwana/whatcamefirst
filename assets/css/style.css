@@ -12,6 +12,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
   overflow-x: hidden;
   min-width: 100vw;
   min-height: 100vh;
@@ -117,8 +119,13 @@ nav {
   text-align: center;
 }
 
-.welcome-list {
-  list-style: decimal;
+.welcome-container p {
+  margin: 12px 4px 2px;
+}
+
+.welcome-list li {
+  list-style: upper-roman;
+  padding: 4px;
 }
 
 .button-family {

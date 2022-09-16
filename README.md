@@ -61,7 +61,7 @@ Whereas the board game has a more competitive element and a betting structure.
 
 ### Colour Scheme
 
-The colour scheme I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and ;incorrect' answers. In addition to this, a bright blue to be neutral between the red and green when trying to select an option. The blue also nicely connects on theme with the historic illustration of the Egyptain Pyramids in the background.
+The colour scheme I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and 'incorrect' answers. In addition to this, I selected sky blue crayola to be neutral between the Impreial red and Malachite green when trying to select an option. The blue also nicely connects on theme with sky featured in the historic illustration of the Egyptain Pyramids in the background.
 
 ### Typography
 
