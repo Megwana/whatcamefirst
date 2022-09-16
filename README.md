@@ -69,18 +69,21 @@ I created Wireframes for mobile, tablet and desktop devices using Figma.
 ![Results Container](./assets/images/wireframes/ResultsWireFrame.png)
 ![Contact Page](./assets/images/wireframes/ContactWireFrame.png)
 
-
 ### Colour Scheme
 
 The colour scheme I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and 'incorrect' answers. In addition to this, I selected sky blue crayola to be neutral between the Impreial red and Malachite green when trying to select an option. The blue also nicely connects on theme with sky featured in the historic illustration of the Egyptain Pyramids in the background.
+
+![Colour Scheme](./assets/images/QuizColourScheme.png)
 
 ### Typography
 
 Google Fonts: 
 
 - The Header I wanted to be more illustrative and more of a delicate handwriting look to appear more historical. Therefore 'Dancing Script' was used.
+![Dancing Script](./assets/images/DancingScriptFont.png)
 
 - The main body font, I wanted to be slightly more formal and easy to read questions and options in the quiz. I felt handwriting text would prove challenging for people with reading/ visual impairments. Therefore, I selected 'Josefin Sans'.
+![Josefin Sans](./assets/images/WebsiteFont.png)
 
 ### Imagery
 
