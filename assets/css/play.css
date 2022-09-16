@@ -448,12 +448,12 @@ body{
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
   .landing-page-title h1 {
-    font-size: 30px;
+    font-size: 20px;
     width: 250px;
     margin-bottom: 20px;
   }
-  .landmark-logo, .material-symbols-outlined {
-  font-size: 30px;
+  .logo-dropdown .dropbtn {
+  font-size: 20px;
   }
 
   .start-button button {
@@ -471,7 +471,7 @@ body{
     padding: 10px;
 }
 
-.introContainer.activeIntro, .quizContainer.activeQuiz, .resultContainer.activeResult {
+.introContainer.activeIntro, .quizContainer.activeQuiz, .resultContainer.activeResult .start-button {
 transform: translate(-50%, -60%) scale(0.6);
 margin: 0 auto;
 }
@@ -485,6 +485,14 @@ margin: 0 auto;
 
 /* Medium devices (landscape tablets, 700px and up) */
 @media only screen and (min-width: 700px) {
+  .landing-page-title h1 {
+    font-size: 30px;
+    width: 30rem;
+}
+
+.logo-dropdown .dropbtn{
+    font-size: 30px;
+}
   .welcome-container {
     width: 500px;
   }
