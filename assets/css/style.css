@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(../images/pyramid.jpg);
+  background: url(../images/pyramid.jpg) alt="Cartoon of Pyramids";
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
