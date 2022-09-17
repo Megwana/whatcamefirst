@@ -1,4 +1,5 @@
 // Below function is from SmtpJS.com and credited in the ReadMe file
+// I have then entered my information below and requirements for the User to input in order to send an email to me.
 function sendEmail() {
   Email.send({
     SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",

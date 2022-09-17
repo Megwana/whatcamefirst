@@ -17,7 +17,7 @@ const leftQuCounter = document.querySelector(".statsRow .maximum-questions");
 const restartQuiz = resultContainer.querySelector(".buttons .restart-button");
 const returnHome = resultContainer.querySelector(".buttons .home-button");
 
-// Start button click action
+// Start button click action with a hideMe class I created, which actions the button to display:none which I felt was better for the button instead of using opacity. 
 startButton.onclick = ()=>{
   introContainer.classList.add("activeIntro"); 
   startButton.classList.add("hideMe");
@@ -35,7 +35,7 @@ contButton.onclick = ()=>{
     quizContainer.classList.add("activeQuiz"); 
     setQuestions(0); 
     questionCounter(1); 
-    startTimer(20); 
+    startTimer(20); // I have input 20 seconds for the timer
     startTimerLine(0); 
 }
 
@@ -46,12 +46,12 @@ let userScore = 0;
 let counter;
 let counterLine;
 let widthValue = 0;
-let maxPoints = 200;
+let maxPoints = 400; // 20 points are scored each questions, therefore overall potential score is 400.
 
 // restartQuiz button clicked
 restartQuiz.onclick = ()=>{
-    quizContainer.classList.add("activeQuiz"); //show quiz box
-    resultContainer.classList.remove("activeResult"); //hide result box
+    quizContainer.classList.add("activeQuiz"); 
+    resultContainer.classList.remove("activeResult"); 
     timeValue = 20; 
     queCount = 0;
     queNumb = 1;
@@ -67,7 +67,7 @@ restartQuiz.onclick = ()=>{
     nextButton.classList.remove("show"); //hide the next button
 }
 
-// returnHome button click takes user back to the home page. Learnt from https://www.w3schools.com/jsref/met_his_back.asp
+// returnHome button click takes user back to the home page. Learnt from reading on https://www.w3schools.com/jsref/met_his_back.asp
 returnHome.onclick = ()=>{
     history.back(-1);
 }
@@ -113,8 +113,8 @@ function setQuestions(index){
 }
 
 // New div tags for icons
-let iconTickTag = '<div class="icon tick"><i class="fa-solid fa-square-check"></i></div>';
-let iconCrossTag = '<div class="icon cross"><i class="fa-solid fa-square-xmark"></i></div>';
+let iconTickTag = '<div class="icon tick"><i class="fa-solid fa-square-check"></i></div>'; // inserted square tick icon from font awesome
+let iconCrossTag = '<div class="icon cross"><i class="fa-solid fa-square-xmark"></i></div>'; // inserted square cross icon from font awesome
 
 // Option click function when user has selected their answer
 function optionClicked(answer){
@@ -155,11 +155,11 @@ function showResult(){
     quizContainer.classList.remove("activeQuiz"); 
     resultContainer.classList.add("activeResult"); 
     const scoreText = resultContainer.querySelector(".scoreText");
-    if (userScore > 140){ 
+    if (userScore > 320){ 
         let scoreTag = '<span> Amazing, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p>.</span>';
         scoreText.innerHTML = scoreTag;
     }
-    else if(userScore > 100){ // if user scored more than 1
+    else if(userScore > 200){ // if user scored more than 1
         let scoreTag = '<span> Well done, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
