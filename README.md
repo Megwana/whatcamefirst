@@ -94,16 +94,23 @@ The cartoon image of the pyramids felt perfect for a bright background and suiti
 
 ### Accessibility
 
+It is important to ensure that the website is user-friendly. I have fulfilled this by the following actions:
+
+I have used semantic HTML and included aria-labels on click options and links where possible.
+Establishing adequate color contrast on the website overall.
+
 ## 3. Features
 
 ### Existing Features
 
 - Header Title 
-Header title always leads you back to the home page
+Header title 'What Came First?' always leads you back to the home page.
 
 - Temple Icon - Top Left
-The Temple icon appears as a logo and also a drop down menu. 
+The Temple icon appears as a logo and also a drop down menu. It lets you know it is interactive because when you hover over it, it turns 360 degrees.
+
 - Welcome Container
+
 - Javascript Modal containing Instructions
 - Start Quiz Button 
 - Introduction Container
@@ -118,7 +125,7 @@ The Temple icon appears as a logo and also a drop down menu.
 
 ### Future Features
 
-- More Questions 
+- More Questions or Quizzes on the website
 - Add multiple difficulties 
 
 ### Why Certain Features Were Not Included

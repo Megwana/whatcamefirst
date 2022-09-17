@@ -46,7 +46,7 @@ let userScore = 0;
 let counter;
 let counterLine;
 let widthValue = 0;
-let maxPoints = 400; // 20 points are scored each questions, therefore overall potential score is 400.
+let maxPoints = 200; // 20 points are scored each questions, therefore overall potential score is 400.
 
 // restartQuiz button clicked
 restartQuiz.onclick = ()=>{
@@ -155,11 +155,11 @@ function showResult(){
     quizContainer.classList.remove("activeQuiz"); 
     resultContainer.classList.add("activeResult"); 
     const scoreText = resultContainer.querySelector(".scoreText");
-    if (userScore > 320){ 
+    if (userScore > 160){ 
         let scoreTag = '<span> Amazing, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p>.</span>';
         scoreText.innerHTML = scoreTag;
     }
-    else if(userScore > 200){ // if user scored more than 1
+    else if(userScore > 100){ // if user scored more than 1
         let scoreTag = '<span> Well done, you got <p>'+ userScore +'</p> out of <p>'+ maxPoints +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
@@ -322,117 +322,6 @@ let questions = [
       {
     numb: 10,
     question: "Who was Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-
-        {
-    numb: 11,
-    question: "What came first ",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-      {
-    numb: 12,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 13,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 14,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 15,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 16,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 17,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 18,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 19,
-    question: "What William became Prime Minister first?",
-    answer: "William Cavendish",
-    options:[
-      "William Grenville",
-      "William Cavendish",
-      "William Gladstone",
-      "William Lamb",
-    ]
-  },
-        {
-    numb: 20,
-    question: "What William became Prime Minister first?",
     answer: "William Cavendish",
     options:[
       "William Grenville",
