@@ -175,7 +175,25 @@ Other:
 
 ## 5. Testing
 
-### W3C Validator
+### W3C Validator & JsHint 
+
+- HTML W3C Validator
+![index.html](./assets/images/Testing/index.htmlCheck.png)
+![play.html](./assets/images/Testing/play.htmlCheck.png)
+![contact.html](./assets/images/Testing/contactcssCheck.png)
+![404.html](./assets/images/Testing/404PageCheck.png)
+
+- CSS W3C Validator
+
+![style.css](./assets/images/Testing/cssIndexCheck.png)
+![play.css](./assets/images/Testing/playcssCheck.png)
+![contact.css](./assets/images/Testing/contactcssCheck.png)
+
+- JsHint
+
+![script.js](./assets/images/Testing/jsHintIndex.png)
+![play.js](./assets/images/Testing/jsHintPlay.png)
+![contact.js](./assets/images/Testing/jsHintContact.png)
 
 ### Lighthouse
 
