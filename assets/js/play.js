@@ -1,3 +1,6 @@
+// General Javascript used from Coding Nepal https://www.youtube.com/watch?v=WUBhpSRS_fk quiz.
+// I have made my own changes and adapted the code for my website; although the fundemental structure has been inspired by Coding Nepal.
+
 //selecting all required elements
 const startButton = document.querySelector(".start-button button");
 const introContainer = document.querySelector(".introContainer");
@@ -64,7 +67,7 @@ restartQuiz.onclick = ()=>{
     nextButton.classList.remove("show"); //hide the next button
 }
 
-// returnHome button click takes user back to the home page
+// returnHome button click takes user back to the home page. Learnt from https://www.w3schools.com/jsref/met_his_back.asp
 returnHome.onclick = ()=>{
     history.back(-1);
 }
@@ -217,7 +220,8 @@ function questionCounter(index){
     leftQuCounter.innerHTML = totalQueCounTag; 
 }
 
-// All quiz questions below in an Array and passing the number, questions, options, and answers
+// All quiz questions below in an Array and passing the number, questions, options, and answers.
+// I have created the questions myself however, the concept was inspired from the Board Game, 'What Came First?'.
 let questions = [
     {
     numb: 1,
