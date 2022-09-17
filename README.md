@@ -176,7 +176,11 @@ To fix this I changed the position to relative.
 
 To fix this, increased the background heights vh to 120 as opposed to 100.
 
+4. higher z-index on drop down menue to ensure it is not behind the other elements when trying to navigate the website.
 
+5. The Time Line was too long
+
+To fix this I altered the seconds it runs and the number of pixels of the width.
 
 ## 6. Deployment
 
