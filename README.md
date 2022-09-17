@@ -1,9 +1,5 @@
 # What Came First
 
-![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
-
-To view the deployed site, click this link: [What Came First](https://megwana.github.io/whatcamefirst)
-
 ## Table of Contents
 
 * [1. Introduction](#Introduction)
@@ -14,17 +10,21 @@ To view the deployed site, click this link: [What Came First](https://megwana.gi
 * [6. Deployment](#Deployment)
 * [7. Credits](#Credits)
 
-## 1. Introduction
-
-### Introduction & Premise 
-
-A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. (https://en.wikipedia.org/wiki/Quiz).
-
-What Came First is a website designed for visitors to learn and test their knowledge on general history. The goal for the user is to play the quiz game and try and guess what historical event, place or person came first from the selection of options. 
+![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
 The Website is responsive, this allows site visitors to interact with the platform on a variety of devices. This may range from, desktops, laptops, tablets and mobiles. 
 
 Please see above a mockup of the website on a range of devices. 
+
+To view the deployed site, click this link: [What Came First](https://megwana.github.io/whatcamefirst)
+
+## 1. Introduction
+
+### Introduction & Premise 
+
+A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. To read more about this, [click here](https://en.wikipedia.org/wiki/Quiz).
+
+What Came First is a website designed for visitors to learn and test their knowledge on general history. The goal for the user is to play the quiz game and try and guess what historical event, place or person came first from the selection of options. 
 
 ### Goals 
 
@@ -43,6 +43,8 @@ For regular visitors, I want them to keep coming back. Therefore as time transpi
 
 I want all visitors to have had a fun and interactive experience whilst completing the quiz. 
 I want them to find the site easy to navigate.
+My target audience is anyone with a curious mind. I hope those who answer the majority of the quiz correctly, enjoyed the questions and felt challenged at times or if they have any feedback on how to make it more challenging; they can get in contact via the contact page.
+Furthermore, I hope those who did not score highly, managed to learn something new and either reasearch more about a question topic in their own time or decide to get in touch via the contact page. 
 
 ## 2. User Design Experience (UX)
 
@@ -88,7 +90,7 @@ Google Fonts:
 ### Imagery
 
 - For the website background, I wanted to have an ancient background. However, I wanted this to be more fun and educational appearing rather than a real life photo. 
-The cartoon image of the pyramids felt perfect for a bright background and suiting the history theme well. Pexels & Shutterstock
+The cartoon image of the pyramids felt perfect for a bright background and suiting the history theme well.
 
 ### Accessibility
 
@@ -136,6 +138,7 @@ Other:
 - SmtpJS - https://smtpjs.com/
 - Am I Responsive? - https://ui.dev/amiresponsive
 - Grammarly - https://app.grammarly.com/
+- freePik https://www.freepik.com/
 
 ## 5. Testing
 
@@ -144,8 +147,12 @@ Other:
 ### Lighthouse
 
 ### Bugs
-Live site absolute and relative URL 
-https://megwana.github.io/whatcamefirst
+
+1. When deploying the website, I had an issue with the background image appearing and my play.css file linking. 
+
+To fix this bug, I had to change the live site URLs from absolute and relative.
+
+2. 
 
 ## 6. Deployment
 
@@ -153,8 +160,9 @@ https://megwana.github.io/whatcamefirst
 
 Links Used:
 - https://fontawesome.com/
-- google icons - favicon
-- <a href="https://www.flaticon.com/free-icons/greek" title="greek icons">temple icon created by Smashicons - Flaticon</a>
+- Google Fonts, including icon for Favicon "https://www.flaticon.com/free-icons/greek"
 - Brian Design https://www.youtube.com/watch?v=f4fB9Xg2JEY
 - Coding Nepal https://www.youtube.com/watch?v=WUBhpSRS_fk
 - https://smtpjs.com/
+- https://www.youtube.com/watch?v=KjQ8uvAt9kQ
+- https://www.w3schools.com/
