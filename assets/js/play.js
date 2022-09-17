@@ -169,9 +169,6 @@ function showResult(){
     }
 }
 
-
-
-
 // startTimer function
 function startTimer(time){
     counter = setInterval(timer, 1000);
@@ -204,11 +201,11 @@ function startTimer(time){
 
 // startTimerLine function
 function startTimerLine(time){
-    counterLine = setInterval(timer, 33);
+    counterLine = setInterval(timer, 33); // I altered the Interval timer 
     function timer(){
         time += 1;
         timeDecline.style.width = time + "px";
-        if(time > 599){ 
+        if(time > 599){ // I altered the pixels to match the size of the Quiz Container
             clearInterval(counterLine); 
         }
     }

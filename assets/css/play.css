@@ -269,13 +269,13 @@ body{
 
 .options .option.correct{
     color: #000000;
-    background: #10e040 alt="Green colour for correct";
+    background: #10e040;
     border: 1px solid #000000;
 }
 
 .options .option.incorrect{
     color: #fafafa;
-    background: #e92539 alt="Red colour for incorrect";
+    background: #e92539;
     border: 1px solid #000000;
 }
 
