@@ -261,6 +261,11 @@ section .error-page {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: rgba(255, 255, 255, 0.8)
+}
+
+.errorPage {
+  text-align: center;
 }
 /* Extra small devices (phones, 450px and down) */
 @media only screen and (max-width: 450px) {
