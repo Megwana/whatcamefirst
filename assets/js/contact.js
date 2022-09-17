@@ -12,5 +12,4 @@ function sendEmail() {
   }).then(
   message => alert("Message Sent Successfully")
   );
-);
 }
