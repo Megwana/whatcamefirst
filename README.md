@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [User Design Experience (UX)](#user-design-experience)
-3. [Features](#features)
-4. [Technologies Applied](#technologies-applied)
-5. [Testing](#testing)
-6. [Deployment](#deployment)
-7. [Credits](#credits)
+* [Introduction](#introduction)
+* [User Design Experience (UX)](#user-design-experience)
+* [Features](#features)
+* [Technologies Applied](#technologies-applied)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 ![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
