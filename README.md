@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-1. [1. Introduction](#introduction)
-2. [2. User Design Experience (UX)](#user-design-experience)
-3. [3. Features](#features)
-4. [4. Technologies Applied](#4.technologies-applied)
-5. [5. Testing](#testing)
-6. [6. Deployment](#deployment)
-7. [7. Credits](#credits)
+1. [Introduction](#introduction)
+2. [User Design Experience (UX)](#user-design-experience)
+3. [Features](#features)
+4. [Technologies Applied](#technologies-applied)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 
 ![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
@@ -164,6 +164,18 @@ To fix this bug, I had to change the live site URLs from absolute and relative.
 2. 
 
 ## 6. Deployment
+
+GitHub pages were used to deploy the live website of Beam Me Up. The measures to deploy the website are as follows:
+
+Step 1: Logged on to GitHub Pages.
+
+Step 2: Navigated to the settings tab, which can be found in the GitHub repository for Beam Me Up.
+
+Step 3: On the left-hand column, I went to Pages and selected the master branch 'main'.
+
+Step 4: Once the mast branch was selected, I clicked 'save' and the page automatically refreshed with a live link at the top of the page, registering the website's successful deployment.
+
+The live link can be found here: https://megwana.github.io/whatcamefirst
 
 ## 7. Credits
 
