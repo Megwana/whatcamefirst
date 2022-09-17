@@ -313,6 +313,12 @@ section .error-page {
 }
 /* Medium devices (landscape tablets, 700px and up) */
 @media only screen and (min-width: 700px) {
+
+  .landing-page-title h1 {
+    font-size: 50px;
+    width: 600px;
+    margin-bottom: 20px;
+}
   .welcome-container {
     width: 500px;
   }
