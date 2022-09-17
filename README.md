@@ -1,6 +1,6 @@
 # What Came First
 
-![What Came First website, displayed on a variety of devices](./assets/images/pyramid.jpg)
+![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
 To view the deployed site, click this link: [What Came First](https://megwana.github.io/whatcamefirst)
 
@@ -131,6 +131,7 @@ Languages:
 Other:
 
 - FontAwesome - https://fontawesome.com/
+- Flaticon - https://www.flaticon.com/free-icons/greek
 - GoogleFonts - https://fonts.google.com/
 - SmtpJS - https://smtpjs.com/
 - Am I Responsive? - https://ui.dev/amiresponsive
@@ -144,7 +145,7 @@ Other:
 
 ### Bugs
 Live site absolute and relative URL 
-https://megwana.github.io/whatcamefirst/
+https://megwana.github.io/whatcamefirst
 
 ## 6. Deployment
 
