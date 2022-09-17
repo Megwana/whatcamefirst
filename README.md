@@ -12,7 +12,7 @@
 
 ![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
-The Website is responsive, this allows site visitors to interact with the platform on a variety of devices. This may range from, desktops, laptops, tablets and mobiles. 
+The Website is responsive, this allows site visitors to interact with the platform on a variety of devices. This may range from, desktops, laptops, tablets, and mobiles. 
 
 Please see above a mockup of the website on a range of devices. 
 
@@ -22,46 +22,46 @@ To view the deployed site, click this link: [What Came First](https://megwana.gi
 
 ### Introduction & Premise 
 
-A quiz is classed a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. To read more about this, [click here](https://en.wikipedia.org/wiki/Quiz).
+A quiz is classed as a game or even a sport for the mind. People either individually or in a team try to answer questions correctly on an array of topics. To read more about this, [click here](https://en.wikipedia.org/wiki/Quiz).
 
-What Came First is a website designed for visitors to learn and test their knowledge on general history. The goal for the user is to play the quiz game and try and guess what historical event, place or person came first from the selection of options. 
+What Came First is a website designed for visitors to learn and test their knowledge of general history. The goal for the user is to play the quiz game and try and guess what historical event, place, or person came first from the selection of options. 
 
 ### Goals 
 
-- New Vistitors to the site: 
+- New Visitors to the site: 
 
 For new visitors, I have the following goals depending on different factors. 
-If the visitors already has a good sense of general knowledge then I want this to be a fun experience for them as a quiz game.
-If the visitor does not know much about history, then I want the user to have learnt and gained knowledge after completing the quiz. 
-As the user is a new visitor, I want them to find the website easy to navigate. I want them to find the rules easy to understand. In addition, I would like them to find the website visually clear to read and appealing design wise. 
+If the visitors already have a good sense of general knowledge then I want this to be a fun experience for them as a quiz game.
+If the visitor does not know much about history, then I want the user to have learned and gained knowledge after completing the quiz. 
+As the user is a new visitor, I want them to find the website easy to navigate. I want them to find the rules easy to understand. In addition, I would like them to find the website visually clear to read and appealing design-wise. 
 
 - Regular Visitors to the site: 
 
-For regular visitors, I want them to keep coming back. Therefore as time transpires, I will look to add more questions and quizes to the website. 
+For regular visitors, I want them to keep coming back. Therefore as time transpires, I will look to add more questions and quizzes to the website. 
 
 - All visitors:
 
 I want all visitors to have had a fun and interactive experience whilst completing the quiz. 
 I want them to find the site easy to navigate.
-My target audience is anyone with a curious mind. I hope those who answer the majority of the quiz correctly, enjoyed the questions and felt challenged at times or if they have any feedback on how to make it more challenging; they can get in contact via the contact page.
-Furthermore, I hope those who did not score highly, managed to learn something new and either reasearch more about a question topic in their own time or decide to get in touch via the contact page. 
+My target audience is anyone with a curious mind. I hope those who answer the majority of the quiz correctly, enjoyed the questions and felt challenged at times if they have any feedback on how to make it more challenging; they can get in contact via the contact page.
+Furthermore, I hope those who did not score highly, managed to learn something new and either research more about a question topic in their own time or decide to get in touch via the contact page. 
 
 ## 2. User Design Experience (UX)
 
 ### Conceptualisation
 
-The original concept for this website is based off of the board game (link referenced below):
+The original concept for this website is based on the board game (link referenced below):
 https://www.amazon.co.uk/First-Board-Picking-Betting-Big/dp/B07VGLK2BY
 
-The website is however, a quiz game with its prime goal to be that people may have learnt something new after participating.
+The website is, however, a quiz game with its prime goal being that people may have learned something new after participating.
 
 Whereas the board game has a more competitive element and a betting structure.
 
 ### Wireframes
 
-As the quiz isn't just general trivia and is specifically on various historical people, places and events that occured: I wanted the insert a background image that embodies ancient history. For me, an image of the Pyramids was perfect to capture this. In addition, I wanted it display also a fun lightness to it. Therefore, a cartoon of the Pyramids I thought aided this well. 
+As the quiz isn't just general trivia and is specifically on various historical people, places, and events that occurred: I wanted the insert a background image that embodies ancient history. For me, an image of the Pyramids was perfect to capture this. In addition, I wanted it to display also a fun lightness to it. Therefore, a cartoon of the Pyramids I thought aided this well. 
 
-I created Wireframes for mobile, tablet and desktop devices using Figma. 
+I created Wireframes for mobile, tablet, and desktop devices using Figma. 
 
 ![Home Page](./assets/images/wireframes/HomePageWireFrame.png)
 ![Instructions Modal](./assets/images/wireframes/InstructionsModalWireFrame.png)
@@ -73,7 +73,7 @@ I created Wireframes for mobile, tablet and desktop devices using Figma.
 
 ### Colour Scheme
 
-The colour scheme I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and 'incorrect' answers. In addition to this, I selected sky blue crayola to be neutral between the Impreial red and Malachite green when trying to select an option. The blue also nicely connects on theme with sky featured in the historic illustration of the Egyptain Pyramids in the background.
+In the colour scheme, I wanted to have neutral elements such as black and white partnered with bright colours for 'correct' and 'incorrect' answers. In addition to this, I selected sky blue Crayola to be neutral between the Imperial red and Malachite green when trying to select an option. The blue also nicely connects on theme with sky featured in the historic illustration of the Egyptian Pyramids in the background.
 
 ![Colour Scheme](./assets/images/QuizColourScheme.png)
 
@@ -81,7 +81,7 @@ The colour scheme I wanted to have neutral elements such as black and white part
 
 Google Fonts: 
 
-- The Header I wanted to be more illustrative and more of a delicate handwriting look to appear more historical. Therefore 'Dancing Script' was used.
+- The Header I wanted to be more illustrative and more delicate handwriting look to appear more historical. Therefore 'Dancing Script' was used.
 ![Dancing Script](./assets/images/DancingScriptFont.png)
 
 - The main body font, I wanted to be slightly more formal and easy to read questions and options in the quiz. I felt handwriting text would prove challenging for people with reading/ visual impairments. Therefore, I selected 'Josefin Sans'.
@@ -89,8 +89,8 @@ Google Fonts:
 
 ### Imagery
 
-- For the website background, I wanted to have an ancient background. However, I wanted this to be more fun and educational appearing rather than a real life photo. 
-The cartoon image of the pyramids felt perfect for a bright background and suiting the history theme well.
+- For the website background, I wanted to have an ancient background. However, I wanted this to be more fun and educational appearing rather than a real-life photo. 
+The cartoon image of the pyramids felt perfect for a bright background and suited the history theme well.
 
 ### Accessibility
 
@@ -109,11 +109,11 @@ Header title 'What Came First?' always leads you back to the home page.
 
 - Temple Icon - Top Left:
 
-The Temple icon appears as a logo and also a drop down menu. It lets you know it is interactive because when you hover over it, it turns 360 degrees.
+The Temple icon appears as a logo and also a drop-down menu. It lets you know it is interactive because when you hover over it, it turns 360 degrees.
 
 - Welcome Container
 
-I wanted to create a general welcome container to give users the options to look at instruction, contact or play the quiz.
+I wanted to create a general welcome container to give users the options to look at instructions, contact, or play the quiz.
 
 I have numbered the bullet points in upper roman style to give an ancient feel.
 
@@ -125,33 +125,33 @@ I added an interactive exit button, so on theme with the temple icon in the top 
 
 - Start Quiz Button:
 
-The start button breaks up the home page and the quiz from one another. It gives the user time to prepare, make sure they have no distractions and are ready to fully immerse themselves in the quiz.
+The start button breaks up the home page and the quiz from one another. It gives the user time to prepare, make sure they have no distractions, and are ready to fully immerse themselves in the quiz.
 
 - Introduction Container:
 
-Although I created an Instructions modal, I felt it was important to always bear in mind and alert the user that they will only have 20 seconds to answer each question, they dont score '1' point per question, they score 20: and they have 10 questions in total.
+Although I created an Instructions modal, I felt it was important to always bear in mind and alert the user that they will only have 20 seconds to answer each question, they don't score '1' point per question, they score 20: and they have 10 questions in total.
 
 In addition, to highlight that should they wish to exit at any point they can click the 'what came first?' header to return to the home page.
 
 - Continue, Exit Button, Try again Button:
 
-It was important that the user had access to full navigation should they wish to return to the start button or continue the quiz. This is the same for once they complete the quiz.
+The user needed to have access to full navigation should they wish to return to the start button or continue the quiz. This is the same once they complete the quiz.
 
 - Questions Counter:
 
 This allowed users to keep a track of where they are and how many questions they have left to answer.
 
-- Time counter and Time Line that inceases:
+- Time counter and Time Line that increases:
 
 I wanted to have a numerical countdown but also a visual line representing the time.
 
-- Correct and Incorrect option:
+- Correct and Incorrect options:
 
 When the user selects an answer, they get to know the correct answer regardless of whether they selected an incorrect option.
 
 - Next Button Appears:
 
-This encourages users to have a go at each question rather than trying to skip answers they dont know. This will mean they get to see the answer should the time run out or they select the wrong one. 
+This encourages users to have a go at each question rather than trying to skip answers they don't know. This will mean they get to see the answer should the time run out or they select the wrong one. 
 
 - Results Container
 
@@ -159,7 +159,7 @@ I have typed different responses depending on how the user performed. All messag
 
 - Javascript Contact Form:
 
-Users will be able to contact with any questions or feedback they have for the quiz. Allowing direct contact with users and the ability to improve the site further based on what people possibly request.
+Users will be able to contact me with any questions or feedback they have for the quiz. Allowing direct contact with users and the ability to improve the site further based on what people possibly request.
 
 ### Future Features
 
@@ -168,7 +168,7 @@ Users will be able to contact with any questions or feedback they have for the q
 
 ### Why Certain Features Were Not Included
 
-Many quizzes have highscores and shuffled questions. However, these are games that hold competition to them about how much knowledge someone knows over the other. 
+Many quizzes have high scores and shuffled questions. However, these are games that hold a competition to them about how much knowledge someone knows over the other. 
 
 I did not feel these features suited my quiz because the history quiz is about learning new things and while points are a nice way to keep track and measure how well a user did. The purpose of the site is to ignite an interest in general history rather than focus on a competition structure. 
 
@@ -208,7 +208,7 @@ Other:
 
 - JsHint
 
-Please note: warning for play.js were not relevant as ES6 is available. 
+Please note: warnings for play.js were not relevant as ES6 is available. 
 
 ![script.js](./assets/images/Testing/jsHintIndex.png)
 ![play.js](./assets/images/Testing/jsHintPlay.png)
@@ -239,7 +239,7 @@ To fix this I changed the position to relative.
 
 To fix this, increased the background heights vh to 120 as opposed to 100.
 
-4. higher z-index on drop down menue to ensure it is not behind the other elements when trying to navigate the website.
+4. higher z-index on the drop-down menu to ensure it is not behind the other elements when trying to navigate the website.
 
 5. The Time Line was too long
 
@@ -265,7 +265,7 @@ Thank you to the below tutorials for guiding me in creating this website.
 
 Links Used:
 - https://fontawesome.com/
-- Google Fonts, including icon for Favicon "https://www.flaticon.com/free-icons/greek"
+- Google Fonts, including an icon for Favicon "https://www.flaticon.com/free-icons/greek"
 - Brian Design https://www.youtube.com/watch?v=f4fB9Xg2JEY
 - Coding Nepal https://www.youtube.com/watch?v=WUBhpSRS_fk
 - https://smtpjs.com/
