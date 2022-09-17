@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [User Design Experience (UX)](#user-design-experience)
+* [Introduction](#Introduction)
+* [User Design Experience (UX)](#User-Design-Experience)
 * [Features](#features)
-* [Technologies Applied](#technologies-applied)
-* [Testing](#testing)
-* [Deployment](#deployment)
-* [Credits](#credits)
+* [Technologies Applied](#Technologies-Applied)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+* [Credits](#Credits)
 
 ![What Came First website, displayed on a variety of devices](./assets/images/responsiveWhatCameFirst.png)
 
@@ -107,9 +107,13 @@ Establishing adequate color contrast on the website overall.
 
 Header title 'What Came First?' always leads you back to the home page.
 
+![Header Title](./assets/images/features/headerHome.png)
+
 - Temple Icon - Top Left:
 
 The Temple icon appears as a logo and also a drop-down menu. It lets you know it is interactive because when you hover over it, it turns 360 degrees.
+
+![logo Temple](./assets/images/features/logoMenuDrop.png)
 
 - Welcome Container
 
@@ -117,49 +121,68 @@ I wanted to create a general welcome container to give users the options to look
 
 I have numbered the bullet points in upper roman style to give an ancient feel.
 
+![welcome container](./assets/images/features/welcomeContainer.png)
+
 - Javascript Modal containing Instructions:
 
 Due to the rules not being extensive, I felt an interactive modal would be more appropriate as opposed to creating a whole page for it. 
 
 I added an interactive exit button, so on theme with the temple icon in the top left. It will spin 360 degrees when you hover over it. 
 
+![instructions](./assets/images/features/instructionsModal.png)
+
 - Start Quiz Button:
 
 The start button breaks up the home page and the quiz from one another. It gives the user time to prepare, make sure they have no distractions, and are ready to fully immerse themselves in the quiz.
+![Start Button](./assets/images/features/startQuiz.png)
 
 - Introduction Container:
 
 Although I created an Instructions modal, I felt it was important to always bear in mind and alert the user that they will only have 20 seconds to answer each question, they don't score '1' point per question, they score 20: and they have 10 questions in total.
 
 In addition, to highlight that should they wish to exit at any point they can click the 'what came first?' header to return to the home page.
+![Introduction Container](./assets/images/features/introContainer.png)
 
 - Continue, Exit Button, Try again Button:
 
-The user needed to have access to full navigation should they wish to return to the start button or continue the quiz. This is the same once they complete the quiz.
+The user needed to have access to full navigation should they wish to return to the start button or continue the quiz. This is the same once they complete the quiz (for reference see the buttons above in the introduction container").
 
 - Questions Counter:
 
 This allowed users to keep a track of where they are and how many questions they have left to answer.
 
+![Question Counter](./assets/images/features/counterTimer.png)
+
 - Time counter and Time Line that increases:
 
 I wanted to have a numerical countdown but also a visual line representing the time.
+
+![Time Counter](./assets/images/features/counterTimer.png)
 
 - Correct and Incorrect options:
 
 When the user selects an answer, they get to know the correct answer regardless of whether they selected an incorrect option.
 
+![Correct and Incorrect](./assets/images/features/correctIncorrect.png)
+
 - Next Button Appears:
 
 This encourages users to have a go at each question rather than trying to skip answers they don't know. This will mean they get to see the answer should the time run out or they select the wrong one. 
+
+![Show Next Button](./assets/images/features/nextShow.png)
 
 - Results Container
 
 I have typed different responses depending on how the user performed. All messages are encouraging but still provide a scale of okay to amazing. 
 
+![results container](./assets/images/features/results.png)
+
 - Javascript Contact Form:
 
 Users will be able to contact me with any questions or feedback they have for the quiz. Allowing direct contact with users and the ability to improve the site further based on what people possibly request.
+
+![contact form](./assets/images/features/contactForm.png)
+![contact form sent](./assets/images/features/MessageSent.png)
 
 ### Future Features
 
