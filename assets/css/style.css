@@ -142,7 +142,7 @@ nav {
   background: #8aebff;
   border-radius: 6px;
   border: none;
-  width: 250px;
+  width: 200px;
   font-size: 20px;
   text-align: center;
 }
@@ -157,6 +157,7 @@ nav {
 
 #modal-btn {
   cursor: pointer;
+  width: 238px;
 }
 
 .modal-box {
