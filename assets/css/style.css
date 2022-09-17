@@ -348,9 +348,7 @@ section .error-page {
     font-size: 20px;
   }
   
-  .index-btn a {
-    width: 238px;
-    height: 30px;
+  .index-btn {
     cursor: pointer;
   }
 }
