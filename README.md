@@ -1,8 +1,8 @@
 # What Came First
 
-![What Came First website, displayed on a variety of devices](assets/images/pyramid.jpg)
+![What Came First website, displayed on a variety of devices](./assets/images/pyramid.jpg)
 
-To view the deployed site, click this link: [What Came First](WEBSITE-LINK)
+To view the deployed site, click this link: [What Came First](https://megwana.github.io/whatcamefirst)
 
 ## Table of Contents
 
@@ -123,13 +123,18 @@ The Temple icon appears as a logo and also a drop down menu.
 
 ## 4. Technologies Applied
 
-HTML 
-CSS
-Javascript
-FontAwesome
-GoogleIcons
-GoogleFonts
-SmtpJS
+Languages:
+- HTML 
+- CSS
+- Javascript
+
+Other:
+
+- FontAwesome - https://fontawesome.com/
+- GoogleFonts - https://fonts.google.com/
+- SmtpJS - https://smtpjs.com/
+- Am I Responsive? - https://ui.dev/amiresponsive
+- Grammarly - https://app.grammarly.com/
 
 ## 5. Testing
 
