@@ -168,7 +168,15 @@ As you can see, after conducting testing via Lighthouse. The website is showing 
 
 To fix this bug, I had to change the live site URLs from absolute and relative.
 
-2. 
+2. The background image was not covering the page in mobile mode. 
+
+To fix this I changed the position to relative. 
+
+3. I was experiencing a gap at the bottom in mobile device mode.
+
+To fix this, increased the background heights vh to 120 as opposed to 100.
+
+
 
 ## 6. Deployment
 
@@ -186,6 +194,8 @@ The live link can be found here: https://megwana.github.io/whatcamefirst
 
 ## 7. Credits
 
+Thank you to the below tutorials for guiding me in creating this website. 
+
 Links Used:
 - https://fontawesome.com/
 - Google Fonts, including icon for Favicon "https://www.flaticon.com/free-icons/greek"
@@ -194,3 +204,5 @@ Links Used:
 - https://smtpjs.com/
 - https://www.youtube.com/watch?v=KjQ8uvAt9kQ
 - https://www.w3schools.com/
+
+In addition, thank you to Alex from student tutoring who guided me in relative and absolute URLs.

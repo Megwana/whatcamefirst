@@ -35,6 +35,7 @@ nav {
   border: none;
   outline: none;
   color: white;
+  z-index: 20;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
