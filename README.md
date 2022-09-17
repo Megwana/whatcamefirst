@@ -146,6 +146,15 @@ Other:
 
 ### Lighthouse
 
+As you can see, after conducting testing via Lighthouse. The website is showing strong results:
+
+![Home Desktop](./assets/images/lighthouse/HomeDeskTest.png)
+![Home Mobile](./assets/images/lighthouse/HomeMobTest.png)
+![Play Desktop](./assets/images/lighthouse/playDeskTest.png)
+![Play Mobile](./assets/images/lighthouse/playMobTest.png)
+![Contact Desktop](./assets/images/lighthouse/contactDeskTest.png)
+![Contact Mobile](./assets/images/lighthouse/ImprovedContactMobTest.png)
+
 ### Bugs
 
 1. When deploying the website, I had an issue with the background image appearing and my play.css file linking. 
