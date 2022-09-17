@@ -297,6 +297,12 @@ section .error-page {
 }
 /* Small devices (portrait tablets and large phones, 500px and up) */
 @media only screen and (min-width: 450px) {
+
+  .landing-page-title h1 {
+    font-size: 22px;
+    width: 260px;
+    margin-bottom: 20px;
+  }
   .welcome-container {
     width: 400px;
   }
