@@ -136,13 +136,30 @@ In addition, to highlight that should they wish to exit at any point they can cl
 - Continue, Exit Button, Try again Button:
 
 It was important that the user had access to full navigation should they wish to return to the start button or continue the quiz. This is the same for once they complete the quiz.
-- Questions Counter
-- Time counter and Time Line that inceases
-- hover effect on option
-- Correct and Incorrect option
-- Next Button Appears
+
+- Questions Counter:
+
+This allowed users to keep a track of where they are and how many questions they have left to answer.
+
+- Time counter and Time Line that inceases:
+
+I wanted to have a numerical countdown but also a visual line representing the time.
+
+- Correct and Incorrect option:
+
+When the user selects an answer, they get to know the correct answer regardless of whether they selected an incorrect option.
+
+- Next Button Appears:
+
+This encourages users to have a go at each question rather than trying to skip answers they dont know. This will mean they get to see the answer should the time run out or they select the wrong one. 
+
 - Results Container
-- Javascript Contact Form
+
+I have typed different responses depending on how the user performed. All messages are encouraging but still provide a scale of okay to amazing. 
+
+- Javascript Contact Form:
+
+Users will be able to contact with any questions or feedback they have for the quiz. Allowing direct contact with users and the ability to improve the site further based on what people possibly request.
 
 ### Future Features
 
@@ -190,6 +207,8 @@ Other:
 ![contact.css](./assets/images/Testing/contactcssCheck.png)
 
 - JsHint
+
+Please note: warning for play.js were not relevant as ES6 is available. 
 
 ![script.js](./assets/images/Testing/jsHintIndex.png)
 ![play.js](./assets/images/Testing/jsHintPlay.png)
