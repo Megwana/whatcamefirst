@@ -103,18 +103,39 @@ Establishing adequate color contrast on the website overall.
 
 ### Existing Features
 
-- Header Title 
+- Header Title: 
+
 Header title 'What Came First?' always leads you back to the home page.
 
-- Temple Icon - Top Left
+- Temple Icon - Top Left:
+
 The Temple icon appears as a logo and also a drop down menu. It lets you know it is interactive because when you hover over it, it turns 360 degrees.
 
 - Welcome Container
 
-- Javascript Modal containing Instructions
-- Start Quiz Button 
-- Introduction Container
-- Continue and Exit Button 
+I wanted to create a general welcome container to give users the options to look at instruction, contact or play the quiz.
+
+I have numbered the bullet points in upper roman style to give an ancient feel.
+
+- Javascript Modal containing Instructions:
+
+Due to the rules not being extensive, I felt an interactive modal would be more appropriate as opposed to creating a whole page for it. 
+
+I added an interactive exit button, so on theme with the temple icon in the top left. It will spin 360 degrees when you hover over it. 
+
+- Start Quiz Button:
+
+The start button breaks up the home page and the quiz from one another. It gives the user time to prepare, make sure they have no distractions and are ready to fully immerse themselves in the quiz.
+
+- Introduction Container:
+
+Although I created an Instructions modal, I felt it was important to always bear in mind and alert the user that they will only have 20 seconds to answer each question, they dont score '1' point per question, they score 20: and they have 10 questions in total.
+
+In addition, to highlight that should they wish to exit at any point they can click the 'what came first?' header to return to the home page.
+
+- Continue, Exit Button, Try again Button:
+
+It was important that the user had access to full navigation should they wish to return to the start button or continue the quiz. This is the same for once they complete the quiz.
 - Questions Counter
 - Time counter and Time Line that inceases
 - hover effect on option
@@ -129,6 +150,10 @@ The Temple icon appears as a logo and also a drop down menu. It lets you know it
 - Add multiple difficulties 
 
 ### Why Certain Features Were Not Included
+
+Many quizzes have highscores and shuffled questions. However, these are games that hold competition to them about how much knowledge someone knows over the other. 
+
+I did not feel these features suited my quiz because the history quiz is about learning new things and while points are a nice way to keep track and measure how well a user did. The purpose of the site is to ignite an interest in general history rather than focus on a competition structure. 
 
 ## 4. Technologies Applied
 
@@ -146,6 +171,7 @@ Other:
 - Am I Responsive? - https://ui.dev/amiresponsive
 - Grammarly - https://app.grammarly.com/
 - freePik https://www.freepik.com/
+- Coolors https://coolors.co/b47eb3-fdf5bf-ffd5ff-92d1c3-8bb8a8
 
 ## 5. Testing
 
