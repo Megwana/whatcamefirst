@@ -481,6 +481,18 @@ margin: 0 auto;
   .welcome-container {
     width: 400px;
   }
+
+  .resultContainer {
+    font-size: 20px;
+  }
+
+  .resultContainer .scoreText span p {
+    padding: 0 6px;
+  }
+
+  .resultContainer h2 {
+    font-size: 34px;
+  }
 }
 
 /* Medium devices (landscape tablets, 700px and up) */
