@@ -310,6 +310,19 @@ section .error-page {
   .welcome-container {
     width: 500px;
   }
+
+  body {
+  background: url(../images/pyramid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
